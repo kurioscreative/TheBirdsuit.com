@@ -1,0 +1,11 @@
+.DS_Store 
+log/*.log
+tmp/**/*
+doc/api
+doc/app
+config/database.yml   
+config/initializers/site_keys.rb   
+config/deploy.rb
+db/*.sqlite3
+public/assets
+.bundle
