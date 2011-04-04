@@ -25,8 +25,7 @@ body.one-col {
   background:#222 url('/images/bg.jpg') repeat;
   #container {
     @include container;
-    background:transparent;
-    padding:10px 20px; }
+    background:transparent;}
   #footer {
     @include column($blueprint-grid-columns); }
   #content {

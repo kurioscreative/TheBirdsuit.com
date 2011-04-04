@@ -1,6 +1,10 @@
 TheBirdsuit::Application.routes.draw do
 
   root :to => "pages#home"
+  match 'story' => 'pages#story', :as => :story
+  match 'contact' => 'pages#contact', :as => :contact
+  match 'artists' => 'pages#artists', :as => :artists
+  match 'blog' => 'pages#blog', :as => :blog
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

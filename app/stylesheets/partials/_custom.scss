@@ -63,7 +63,16 @@ h2:before{
   padding-right:5px;
   content: url('/images/heart_med.png');
 }
-//Typography
+//---------- Artist ----------------
+.bio{
+  @include column(8, true);
+  height:250px;
+  overflow:hidden;
+}
+.bio-image{
+  @include column(6);
+}
+
 //---------- Utility Classes ----------------
 .wrapper{
   -moz-border-radius: 10px;
@@ -83,4 +92,7 @@ h2:before{
 }
 .full-box{
   @include column(24, true)
+}
+.story-sidebar{
+  @include column(6, true);
 }
