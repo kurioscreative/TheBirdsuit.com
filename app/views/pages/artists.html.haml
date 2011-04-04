@@ -14,16 +14,24 @@
     %br.clear
 .one-third-box
   .wrapper
-    = image_tag 'http://placehold.it/270x160'
+    = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
 .one-third-box
   .wrapper
     = image_tag 'http://placehold.it/270x56'
 .full-box
   %h2 Release <strong>Material</strong>
   .wrapper
-    = image_tag 'http://placehold.it/300x150'
-    = image_tag 'http://placehold.it/300x150'
-    = image_tag 'http://placehold.it/300x150'       
-    = image_tag 'http://placehold.it/300x150'
-    = image_tag 'http://placehold.it/300x150'
-    = image_tag 'http://placehold.it/300x150'           
+    \ <a class="prev browse left"></a> 
+    .scrollable
+      .items
+        .work-group
+          .item= link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+          .item= link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+          .item= link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+        .work-group
+          = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+          = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+          = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+    \ <a class="next browse right"></a> 
+    %br.clear
+       

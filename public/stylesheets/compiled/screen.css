@@ -461,9 +461,11 @@ body.two-col #container {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  margin-top: 10px;
+  padding: 0 20px;
   background: transparent;
 }
-/* line 29, ../../../app/stylesheets/partials/_two_col.scss */
+/* line 31, ../../../app/stylesheets/partials/_two_col.scss */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -474,7 +476,7 @@ body.two-col #footer {
 * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 31, ../../../app/stylesheets/partials/_two_col.scss */
+/* line 33, ../../../app/stylesheets/partials/_two_col.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -487,7 +489,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 37, ../../../app/stylesheets/partials/_two_col.scss */
+/* line 39, ../../../app/stylesheets/partials/_two_col.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -509,9 +511,11 @@ body.one-col #container {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  margin-top: 10px;
+  padding: 0 20px;
   background: transparent;
 }
-/* line 29, ../../../app/stylesheets/partials/_one_col.scss */
+/* line 31, ../../../app/stylesheets/partials/_one_col.scss */
 body.one-col #footer {
   display: inline;
   float: left;
@@ -522,7 +526,7 @@ body.one-col #footer {
 * html body.one-col #footer {
   overflow-x: hidden;
 }
-/* line 31, ../../../app/stylesheets/partials/_one_col.scss */
+/* line 33, ../../../app/stylesheets/partials/_one_col.scss */
 body.one-col #content {
   display: inline;
   float: left;
@@ -635,7 +639,29 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 77, ../../../app/stylesheets/partials/_custom.scss */
+/* line 75, ../../../app/stylesheets/partials/_custom.scss */
+.scrollable {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 830px;
+  height: 160px;
+}
+/* line 81, ../../../app/stylesheets/partials/_custom.scss */
+.scrollable .items {
+  width: 20000em;
+  position: absolute;
+}
+/* line 84, ../../../app/stylesheets/partials/_custom.scss */
+.scrollable .items div {
+  float: left;
+}
+/* line 87, ../../../app/stylesheets/partials/_custom.scss */
+.scrollable .items .item {
+  margin-right: 10px;
+}
+
+/* line 95, ../../../app/stylesheets/partials/_custom.scss */
 .wrapper {
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -647,7 +673,7 @@ h2:before {
   margin-bottom: 20px;
 }
 
-/* line 87, ../../../app/stylesheets/partials/_custom.scss */
+/* line 105, ../../../app/stylesheets/partials/_custom.scss */
 .two-third-box {
   display: inline;
   float: left;
@@ -659,7 +685,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 90, ../../../app/stylesheets/partials/_custom.scss */
+/* line 108, ../../../app/stylesheets/partials/_custom.scss */
 .one-third-box {
   display: inline;
   float: left;
@@ -671,7 +697,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 93, ../../../app/stylesheets/partials/_custom.scss */
+/* line 111, ../../../app/stylesheets/partials/_custom.scss */
 .full-box {
   display: inline;
   float: left;
@@ -683,7 +709,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 96, ../../../app/stylesheets/partials/_custom.scss */
+/* line 114, ../../../app/stylesheets/partials/_custom.scss */
 .story-sidebar {
   display: inline;
   float: left;
@@ -693,4 +719,87 @@ h2:before {
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .story-sidebar {
   overflow-x: hidden;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+/* line 120, ../../../app/stylesheets/partials/_custom.scss */
+a.browse {
+  background: url("/images/hori_large.png") no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 60px 8px;
+  cursor: pointer;
+  font-size: 1px;
+}
+
+/* right */
+/* line 132, ../../../app/stylesheets/partials/_custom.scss */
+a.right {
+  background-position: 0 -30px;
+  clear: right;
+  margin-right: 0px;
+}
+
+/* line 133, ../../../app/stylesheets/partials/_custom.scss */
+a.right:hover {
+  background-position: -30px -30px;
+}
+
+/* line 134, ../../../app/stylesheets/partials/_custom.scss */
+a.right:active {
+  background-position: -60px -30px;
+}
+
+/* left */
+/* line 138, ../../../app/stylesheets/partials/_custom.scss */
+a.left {
+  margin-left: 0px;
+}
+
+/* line 139, ../../../app/stylesheets/partials/_custom.scss */
+a.left:hover {
+  background-position: -30px 0;
+}
+
+/* line 140, ../../../app/stylesheets/partials/_custom.scss */
+a.left:active {
+  background-position: -60px 0;
+}
+
+/* disabled navigational button */
+/* line 143, ../../../app/stylesheets/partials/_custom.scss */
+a.disabled {
+  visibility: hidden !important;
+}
+
+/* line 152, ../../../app/stylesheets/partials/_custom.scss */
+#overlay {
+  height: 450px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 158, ../../../app/stylesheets/partials/_custom.scss */
+div.contentWrap {
+  height: 441px;
+  overflow-y: auto;
+}
+
+/* the overlayed element */
+/* line 163, ../../../app/stylesheets/partials/_custom.scss */
+.apple_overlay {
+  display: none;
+  /* growing background image */
+  background: #111;
+  /* 
+  	width after the growing animation finishes
+  	height is automatically calculated
+  */
+  width: 640px;
+  /* some padding to layout nested elements nicely  */
+  padding: 25px;
+  /* a little styling */
+  font-size: 11px;
 }
