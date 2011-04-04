@@ -1,0 +1,86 @@
+
+.headerWrap{
+  width:100%;
+  min-width:1000px;
+  height:100px;
+  background:#111 url('/images/header.jpg') repeat-x;
+  border-bottom:1px solid #333;
+      -moz-box-shadow: 0 5px 8px #222;
+    box-shadow: 0 5px 8px #222;
+}
+.bp .header{
+  width:960px;
+  margin:0 auto;
+  h1{
+    padding-top:25px;
+    margin-bottom:0;
+    padding-bottom:0;
+  }
+  
+}
+nav{
+  float:right;
+  padding-bottom:5px;
+  font-size:1.25em;
+}
+ul.nav{
+  li{
+    float:left;
+    display:block;
+    margin:0 15px;
+    a:link{
+      color:#fff;
+      text-decoration:none;
+    }
+    a:before{
+      padding-right:5px;
+      content: url('/images/heart_sm.gif');
+    }
+    a:visited{
+      color:#fff;
+      text-decoration:none;
+    }
+    a:hover{
+      color:#B790C2;
+      text-decoration:none;      
+    }
+  }
+}
+.footer{
+  width:940px;
+  min-height:100px;
+  padding:10px;
+  margin: 0 auto;
+  background:#111;
+  background:rgba(0,0,0, 0.1);
+    -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+
+h2:before{
+  padding-right:5px;
+  content: url('/images/heart_med.png');
+}
+//Typography
+//---------- Utility Classes ----------------
+.wrapper{
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border:1px solid #222;
+  background:#010101;
+  padding:20px;
+  -moz-box-shadow: 2px 2px 10px #444 inset;
+  box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
+  margin-bottom:20px;
+}
+.two-third-box{
+  @include column(16);
+}
+.one-third-box{
+  @include column(8, true);
+}
+.full-box{
+  @include column(24, true)
+}
