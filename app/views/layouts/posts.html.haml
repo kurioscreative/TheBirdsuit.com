@@ -4,7 +4,9 @@
 %body{ :lang => 'en', :class => "bp two-col #{controller.controller_name}" }
   %header
     = render :partial => 'layouts/header'
-  #container  
+  #container
+    #overlay.apple_overlay
+      .contentWrap  
     #content
       = render :partial => 'layouts/flashes'
       #breadcrumbs= crumbs

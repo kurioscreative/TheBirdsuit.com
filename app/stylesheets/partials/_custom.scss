@@ -24,6 +24,7 @@ nav{
   font-size:1.25em;
 }
 ul.nav{
+  position:relative;
   li{
     float:left;
     display:block;
@@ -43,6 +44,45 @@ ul.nav{
     a:hover{
       color:#B790C2;
       text-decoration:none;      
+    }
+    ul.sub-nav{
+      display:none;
+      position:absolute;
+
+      padding-top:10px;
+      width:140px;
+      li{
+        margin-left:-50px;
+      }
+      a:link{
+        color:#222;
+        text-decoration:none;
+        background:#fff;
+        padding:2px 5px;
+        font-size:.85em;
+        border:1px solid #555;
+        -moz-box-shadow: 2px 2px 10px #000;;
+  box-shadow: 2px 2px 10px #000;
+        width:180px;
+        display:block;
+      }
+      a:before{
+        padding-right:5px;
+        content: url('/images/heart_sm.gif');
+      }
+      a:visited{
+        color:#222;
+        text-decoration:none;
+        background:#fff;        
+      }
+      a:hover{
+        color:#B790C2;
+        text-decoration:none;      
+      }
+      a:hover:before{
+        padding-right:5px;
+        content: url('/images/heart_sm_hover.gif');        
+      }      
     }
   }
 }
@@ -89,7 +129,16 @@ h2:before{
     };
   };
 }
-
+.bp ul.artists{
+  padding:0;
+  margin:0;
+  li{
+    float:left;
+    display:block;
+    text-align:center;
+    margin:0 10px 10px 0;
+  }
+}
 //---------- Blog Classes ----------------
 .comments{
   background:#f5f5f5;
@@ -120,7 +169,7 @@ h2:before{
   border:1px solid #222;
   background:#010101;
   padding:20px;
-  -moz-box-shadow: 2px 2px 10px #444 inset;
+  -moz-box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;;
   box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
   margin-bottom:20px;
 }

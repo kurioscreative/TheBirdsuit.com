@@ -23,9 +23,9 @@
           - if i % 3 == 0 && i != 0
             \ </div>
             \ <div class="workgroup"> 
-            .item= link_to image_tag(r.release_img_url, 'data-hover' => r.release_img_hover_url), artist_release_path(@artist, r.id), :rel => "#overlay", :remote => true
+            .item= link_to image_tag(r.release_img_url, 'data-hover' => r.release_img_hover_url), artist_release_path(@artist, r), :rel => "#overlay", :remote => true
           - else
-            .item= link_to image_tag(r.release_img_url, 'data-hover' => r.release_img_hover_url), artist_release_path(@artist, r.id), :rel => "#overlay", :remote => true
+            .item= link_to image_tag(r.release_img_url, 'data-hover' => r.release_img_hover_url), artist_release_path(@artist, r), :rel => "#overlay", :remote => true
         \ </div>
     \ <a class="next browse right"></a> 
     %br.clear

@@ -20,6 +20,8 @@
 
 class Artist < ActiveRecord::Base
   has_many :releases
+  has_friendly_id :name, :use_slug => true
+  attr_accessible :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :cached_slug, :bio_video_img_url, :bio_video_img_hover_url
   
-  attr_accessible :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url
+  validates_presence_of :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :bio_video_img_url, :bio_video_img_hover_url
 end

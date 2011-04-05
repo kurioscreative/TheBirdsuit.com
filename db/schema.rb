@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110405062858) do
+ActiveRecord::Schema.define(:version => 20110405170914) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -25,8 +25,12 @@ ActiveRecord::Schema.define(:version => 20110405062858) do
     t.string   "bio_video_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cached_slug"
+    t.string   "bio_video_img_url"
+    t.string   "bio_video_img_hover_url"
   end
 
+  add_index "artists", ["cached_slug"], :name => "index_artists_on_cached_slug"
   add_index "artists", ["name"], :name => "index_artists_on_name"
 
   create_table "posts", :force => true do |t|
@@ -40,7 +44,10 @@ ActiveRecord::Schema.define(:version => 20110405062858) do
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cached_slug"
   end
+
+  add_index "posts", ["cached_slug"], :name => "index_posts_on_cached_slug"
 
   create_table "rails_admin_histories", :force => true do |t|
     t.string   "message"
@@ -67,9 +74,23 @@ ActiveRecord::Schema.define(:version => 20110405062858) do
     t.boolean  "is_featured"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cached_slug"
   end
 
   add_index "releases", ["artist_id"], :name => "index_releases_on_artist_id"
+  add_index "releases", ["cached_slug"], :name => "index_releases_on_cached_slug"
+
+  create_table "slugs", :force => true do |t|
+    t.string   "name"
+    t.integer  "sluggable_id"
+    t.integer  "sequence",                     :default => 1, :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "slugs", ["name", "sluggable_type", "sequence", "scope"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
+  add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

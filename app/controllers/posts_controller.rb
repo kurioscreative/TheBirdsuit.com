@@ -3,6 +3,7 @@ class PostsController < ApplicationController
     @featured = Post.where(:featured => true).first
     @posts = Post.where("id != '#{@featured.id}' ").all
     @artists = Artist.all
+    @latest_release = Release.where(:is_featured => true).first
   end
   
   def show

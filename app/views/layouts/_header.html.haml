@@ -4,7 +4,15 @@
     %nav
       %ul.nav
         %li= link_to "Story", story_path
-        %li= link_to "Artists", artists_path
+        %li{:id => "artist-link"}
+          = link_to "Artists", artists_path
+          %ul.sub-nav
+            - if @artists
+              - @artists.each do |artist| 
+                %li=link_to artist.name, artist_path(artist)
+            - else
+              - Artist.all.each do |artist| 
+                %li=link_to artist.name, artist_path(artist)
         %li= link_to "Blog", blog_path
         %li= link_to "Contact", contact_path
     %br{:style => "clear:both"}

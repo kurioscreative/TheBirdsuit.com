@@ -16,4 +16,4 @@
   %h2 Artist <strong>Roster</strong>
   .wrapper
     - @artists.each do |artist| 
-      = image_tag artist.bio_pic_url, "data-hover" => artist.bio_pic_hover_url
+      = link_to image_tag(artist.bio_pic_url, "data-hover" => artist.bio_pic_hover_url), artist_path(artist)

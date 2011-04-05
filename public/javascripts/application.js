@@ -30,3 +30,13 @@ $(function() {
         $('<img />').attr('src', $(this).attr('data-hover'));
     });;
 });
+
+$(function() {
+  $('#artist-link').hover(
+    function(){
+      $('ul.sub-nav').fadeIn()
+    },
+    function(){
+      $('ul.sub-nav').fadeOut()
+    });
+});
