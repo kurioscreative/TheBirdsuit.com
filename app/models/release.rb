@@ -21,4 +21,28 @@ class Release < ActiveRecord::Base
   belongs_to :artist
   
   attr_accessible :artist_id, :release_img_url, :release_img_hover_url, :video_url, :title, :description, :is_featured
+
+  before_validation :get_video_info
+  
+  def get_video_info
+    url = video_url.to_s
+
+    self.video_id = video[:id]
+    self.video_type = video[:type]
+  end
+  def video
+    begin
+      #YouTube
+      if video_url.match(/http:\/\/www\.youtube\.com\/watch\?v=([a-z0-9_\/-]+).*/i)
+        {:id => $1, :type => 'youtube'}
+      #----- Vimeo ------ #      
+      elsif video_url.match(/http:\/\/vimeo\.com\/([a-z0-9]+).*/i)
+        {:id => $1, :type => 'vimeo'}
+      else
+        {:id => nil, :type => 'website'}
+      end
+    rescue Exception
+      return {:id => nil, :type => nil}
+    end
+  end
 end

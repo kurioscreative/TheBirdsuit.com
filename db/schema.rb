@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110405041241) do
+ActiveRecord::Schema.define(:version => 20110405062858) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,19 @@ ActiveRecord::Schema.define(:version => 20110405041241) do
   end
 
   add_index "artists", ["name"], :name => "index_artists_on_name"
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.text     "body"
+    t.string   "author"
+    t.boolean  "featured"
+    t.string   "featured_img_url"
+    t.datetime "published_date"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rails_admin_histories", :force => true do |t|
     t.string   "message"

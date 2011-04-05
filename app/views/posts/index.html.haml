@@ -1,0 +1,27 @@
+%h2 Latest <strong>News</strong>
+.wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
+  .featured-text
+    %h3= link_to @featured.title, post_path(@featured)
+    %p= @featured.summary
+  
+%h2 Crowd <strong>Control</strong>
+.wrapper
+  - @posts.each do |post| 
+    %li.post
+      %h3= link_to post.title, post_path(post)
+      %small== #{post.author} | #{post.published_date.strftime('%D')}
+      %p= post.summary
+
+-content_for :sidebar do
+  .wrapper
+    Twitter
+  %h2 Latest <strong>Release</strong>
+  .wrapper
+    = image_tag 'http://placehold.it/270x150'
+  %h2 We <strong>Are</strong> The Birdsuit
+  .wrapper
+    - @artists.each do |artist| 
+      = image_tag artist.roster_pic_url, 'data-hover' => artist.roster_pic_hover_url
+  %h2 Arch<strong>ive</strong>
+  .wrapper
+    = image_tag 'http://placehold.it/270x150'

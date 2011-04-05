@@ -661,7 +661,35 @@ h2:before {
   margin-right: 10px;
 }
 
-/* line 95, ../../../app/stylesheets/partials/_custom.scss */
+/* line 94, ../../../app/stylesheets/partials/_custom.scss */
+.comments {
+  background: #f5f5f5;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* line 100, ../../../app/stylesheets/partials/_custom.scss */
+.featured {
+  height: 300px;
+  vertical-align: bottom;
+  position: relative;
+}
+
+/* line 105, ../../../app/stylesheets/partials/_custom.scss */
+.featured-text {
+  padding: 10px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 610px;
+  left: -1px;
+  -moz-border-radius: 11px;
+  border-radius: 3px;
+}
+
+/* line 117, ../../../app/stylesheets/partials/_custom.scss */
 .wrapper {
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -673,7 +701,7 @@ h2:before {
   margin-bottom: 20px;
 }
 
-/* line 105, ../../../app/stylesheets/partials/_custom.scss */
+/* line 127, ../../../app/stylesheets/partials/_custom.scss */
 .two-third-box {
   display: inline;
   float: left;
@@ -685,7 +713,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 108, ../../../app/stylesheets/partials/_custom.scss */
+/* line 130, ../../../app/stylesheets/partials/_custom.scss */
 .one-third-box {
   display: inline;
   float: left;
@@ -697,7 +725,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 111, ../../../app/stylesheets/partials/_custom.scss */
+/* line 133, ../../../app/stylesheets/partials/_custom.scss */
 .full-box {
   display: inline;
   float: left;
@@ -709,7 +737,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 114, ../../../app/stylesheets/partials/_custom.scss */
+/* line 136, ../../../app/stylesheets/partials/_custom.scss */
 .story-sidebar {
   display: inline;
   float: left;
@@ -722,7 +750,7 @@ h2:before {
 }
 
 /* prev, next, prevPage and nextPage buttons */
-/* line 120, ../../../app/stylesheets/partials/_custom.scss */
+/* line 142, ../../../app/stylesheets/partials/_custom.scss */
 a.browse {
   background: url("/images/hori_large.png") no-repeat;
   display: block;
@@ -735,60 +763,60 @@ a.browse {
 }
 
 /* right */
-/* line 132, ../../../app/stylesheets/partials/_custom.scss */
+/* line 154, ../../../app/stylesheets/partials/_custom.scss */
 a.right {
   background-position: 0 -30px;
   clear: right;
   margin-right: 0px;
 }
 
-/* line 133, ../../../app/stylesheets/partials/_custom.scss */
+/* line 155, ../../../app/stylesheets/partials/_custom.scss */
 a.right:hover {
   background-position: -30px -30px;
 }
 
-/* line 134, ../../../app/stylesheets/partials/_custom.scss */
+/* line 156, ../../../app/stylesheets/partials/_custom.scss */
 a.right:active {
   background-position: -60px -30px;
 }
 
 /* left */
-/* line 138, ../../../app/stylesheets/partials/_custom.scss */
+/* line 160, ../../../app/stylesheets/partials/_custom.scss */
 a.left {
   margin-left: 0px;
 }
 
-/* line 139, ../../../app/stylesheets/partials/_custom.scss */
+/* line 161, ../../../app/stylesheets/partials/_custom.scss */
 a.left:hover {
   background-position: -30px 0;
 }
 
-/* line 140, ../../../app/stylesheets/partials/_custom.scss */
+/* line 162, ../../../app/stylesheets/partials/_custom.scss */
 a.left:active {
   background-position: -60px 0;
 }
 
 /* disabled navigational button */
-/* line 143, ../../../app/stylesheets/partials/_custom.scss */
+/* line 165, ../../../app/stylesheets/partials/_custom.scss */
 a.disabled {
   visibility: hidden !important;
 }
 
-/* line 152, ../../../app/stylesheets/partials/_custom.scss */
+/* line 174, ../../../app/stylesheets/partials/_custom.scss */
 #overlay {
   height: 450px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 
-/* line 158, ../../../app/stylesheets/partials/_custom.scss */
+/* line 180, ../../../app/stylesheets/partials/_custom.scss */
 div.contentWrap {
   height: 441px;
   overflow-y: auto;
 }
 
 /* the overlayed element */
-/* line 163, ../../../app/stylesheets/partials/_custom.scss */
+/* line 185, ../../../app/stylesheets/partials/_custom.scss */
 .apple_overlay {
   display: none;
   /* growing background image */

@@ -7,10 +7,13 @@ TheBirdsuit::Application.routes.draw do
   resources :artists, :only => [:index, :show] do
     resources :releases, :only => [:show]
   end
+  resources :posts, :only => [:index, :show]
+  match 'blog' => 'posts#index', :as => :blog
+  
   match 'story' => 'pages#story', :as => :story
   match 'contact' => 'pages#contact', :as => :contact
   # match 'artists' => 'pages#artists', :as => :artists
-  match 'blog' => 'pages#blog', :as => :blog
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

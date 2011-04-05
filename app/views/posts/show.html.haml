@@ -1,0 +1,23 @@
+%h2= @post.title
+.wrapper
+  %small== Posted by: #{@post.author} | Published: #{@post.published_date.strftime('%D')}
+  = simple_format(@post.body)
+  .comments= render 'comments'
+
+-content_for :sidebar do
+  .wrapper
+    Twitter
+  %h2 Latest <strong>Release</strong>
+  .wrapper
+    = image_tag 'http://placehold.it/270x150'
+  %h2 We <strong>Are</strong> The Birdsuit
+  .wrapper
+    = image_tag 'http://placehold.it/270x100'
+    = image_tag 'http://placehold.it/270x100'
+    = image_tag 'http://placehold.it/270x100'
+    = image_tag 'http://placehold.it/270x100'
+    = image_tag 'http://placehold.it/270x100'
+    = image_tag 'http://placehold.it/270x100'
+  %h2 Arch<strong>ive</strong>
+  .wrapper
+    = image_tag 'http://placehold.it/270x150'

@@ -1,17 +1,19 @@
 %h2 Featured <strong>News</strong>
 .two-third-box
-  .wrapper
-    = image_tag 'http://placehold.it/590x300'
+  .wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
+    .featured-text
+      %h3= link_to @featured.title, post_path(@featured)
+      %p= @featured.summary
+  
 .one-third-box
   %h2 Latest <strong>Release</strong>
   .wrapper
-    = image_tag 'http://placehold.it/270x120'
+    = image_tag @release.release_img_url, "data-hover" => @release.release_img_hover_url
 .one-third-box
   .wrapper
     = image_tag 'http://placehold.it/270x56'
 .full-box
   %h2 Artist <strong>Roster</strong>
   .wrapper
-    = image_tag 'http://placehold.it/300x220'
-    = image_tag 'http://placehold.it/300x220'
-    = image_tag 'http://placehold.it/300x220'        
+    - @artists.each do |artist| 
+      = image_tag artist.bio_pic_url, "data-hover" => artist.bio_pic_hover_url
