@@ -1,5 +1,7 @@
 TheBirdsuit::Application.routes.draw do
 
+  devise_for :users
+
   root :to => "pages#home"
   match 'story' => 'pages#story', :as => :story
   match 'contact' => 'pages#contact', :as => :contact

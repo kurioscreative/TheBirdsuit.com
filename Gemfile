@@ -19,6 +19,7 @@ gem 'sqlite3'
 
 #Authentication Gems
 gem "devise"
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 #Model Gems
 gem "friendly_id", "~> 3.2.1"

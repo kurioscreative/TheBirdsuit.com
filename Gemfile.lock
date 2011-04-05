@@ -6,6 +6,14 @@ GIT
       haml
       rack
 
+GIT
+  remote: git://github.com/sferik/rails_admin.git
+  revision: 43272e0
+  specs:
+    rails_admin (0.0.1)
+      builder (~> 2.1.0)
+      rails (~> 3.0.5)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -226,6 +234,7 @@ DEPENDENCIES
   jquery-rails
   nbrew-country_select
   rails (= 3.0.5)
+  rails_admin!
   rspec-rails (~> 2.5)
   ruby_parser
   shoulda-matchers
