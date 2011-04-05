@@ -1,0 +1,6 @@
+%h2 Artists
+.full-box
+  .wrapper
+    %ul
+      - @artists.each do |artist|
+        %li= link_to artist.name, resource_path(artist)

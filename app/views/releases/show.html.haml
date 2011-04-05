@@ -1,0 +1,11 @@
+%h2= @release.title
+
+.two-third-box
+  .wrapper
+    #video
+      = render 'video_player', :locals => {:release => @release}
+.one-third-box.last
+  .wrapper
+    %h3 Description
+    %p== Artist: #{link_to @release.artist.name, artist_path(@release.artist)}
+    = @release.description

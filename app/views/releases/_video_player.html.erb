@@ -1,0 +1,10 @@
+
+<% if @release.video_type == "youtube" %>
+  <iframe title="YouTube video player" width="600" height="368" src="http://www.youtube.com/embed/<%= @release.video_id %>" frameborder="0" allowfullscreen></iframe>
+<% end %>
+
+<% if @release.video_type == "vimeo" %>
+  <div class="video">
+    <iframe src="http://player.vimeo.com/video/<%= @release.video_id %>" width="600" height="368" frameborder="0"></iframe>
+  </div>
+<%end%>

@@ -3,9 +3,13 @@ TheBirdsuit::Application.routes.draw do
   devise_for :users
 
   root :to => "pages#home"
+  
+  resources :artists, :only => [:index, :show] do
+    resources :releases, :only => [:show]
+  end
   match 'story' => 'pages#story', :as => :story
   match 'contact' => 'pages#contact', :as => :contact
-  match 'artists' => 'pages#artists', :as => :artists
+  # match 'artists' => 'pages#artists', :as => :artists
   match 'blog' => 'pages#blog', :as => :blog
   # The priority is based upon order of creation:
   # first created -> highest priority.

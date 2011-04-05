@@ -84,7 +84,7 @@ a img {
 /* line 6, ../../../app/stylesheets/partials/_page.scss */
 body.bp {
   line-height: 1.5;
-  font-family: "Tahoma";
+  font-family: "Verdana";
   color: white;
   font-size: 75%;
 }
@@ -329,7 +329,7 @@ body.bp .bottom {
 }
 /* line 8, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body.bp .showgrid {
-  background: url('/images/grid.png?1301875247');
+  background: url('/images/grid.png?1301891974');
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error {

@@ -1,0 +1,32 @@
+%h2= @artist.name
+.two-third-box
+  .wrapper
+    .bio-image= image_tag @artist.bio_pic_url, 'data-hover' => @artist.bio_pic_hover_url
+    %h3 Biography
+    .bio
+      = simple_format(@artist.biography_text)
+    %br.clear
+.one-third-box
+  .wrapper
+    = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+.one-third-box
+  .wrapper
+    = image_tag 'http://placehold.it/270x56'
+.full-box
+  %h2 Release <strong>Material</strong>
+  .wrapper
+    \ <a class="prev browse left"></a> 
+    .scrollable
+      .items
+        \ <div class="workgroup">
+        - @artist.releases.each_with_index do |r, i|
+          - if i % 3 == 0 && i != 0
+            \ </div>
+            \ <div class="workgroup"> 
+            .item= link_to image_tag(r.release_img_url), artist_release_path(@artist, r.id), :rel => "#overlay", 'data-hover' => r.release_img_hover_url, :remote => true
+          - else
+            .item= link_to image_tag(r.release_img_url), artist_release_path(@artist, r.id), :rel => "#overlay", 'data-hover' => r.release_img_hover_url, :remote => true
+        \ </div>
+    \ <a class="next browse right"></a> 
+    %br.clear
+       
