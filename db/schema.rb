@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110405040238) do
+ActiveRecord::Schema.define(:version => 20110405041241) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -29,6 +29,19 @@ ActiveRecord::Schema.define(:version => 20110405040238) do
 
   add_index "artists", ["name"], :name => "index_artists_on_name"
 
+  create_table "rails_admin_histories", :force => true do |t|
+    t.string   "message"
+    t.string   "username"
+    t.integer  "item"
+    t.string   "table"
+    t.integer  "month",      :limit => 2
+    t.integer  "year",       :limit => 5
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_histories_on_item_and_table_and_month_and_year"
+
   create_table "releases", :force => true do |t|
     t.integer  "artist_id"
     t.string   "release_img_url"
@@ -44,5 +57,22 @@ ActiveRecord::Schema.define(:version => 20110405040238) do
   end
 
   add_index "releases", ["artist_id"], :name => "index_releases_on_artist_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                               :default => "", :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
