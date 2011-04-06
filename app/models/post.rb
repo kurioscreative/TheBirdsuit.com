@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110405062858
+# Schema version: 20110406232901
 #
 # Table name: posts
 #
@@ -14,6 +14,7 @@
 #  status           :string(255)
 #  created_at       :datetime
 #  updated_at       :datetime
+#  cached_slug      :string(255)
 #
 
 class Post < ActiveRecord::Base

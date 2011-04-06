@@ -9,7 +9,7 @@ TheBirdsuit::Application.routes.draw do
   end
   resources :posts, :only => [:index, :show]
   match 'blog' => 'posts#index', :as => :blog
-  
+  match 'promo' => 'pages#promo', :as => :promo
   match 'story' => 'pages#story', :as => :story
   match 'contact' => 'pages#contact', :as => :contact
   # match 'artists' => 'pages#artists', :as => :artists

@@ -1,14 +1,11 @@
 - title "Story - The Birdsuit"
 %h2 We Are <strong>The Birdsuit</strong>
 .wrapper
-  .title-img= image_tag 'http://placehold.it/910x250'
+  .title-img= image_tag @page.page_img_url
   .two-third-box
-    %h2 The <strong>Story</strong>
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pulvinar justo vel sodales. Maecenas at justo quis felis faucibus tempus vitae non justo. Maecenas eu ligula libero, gravida pellentesque nisl. Fusce eget nisl nisi, a semper metus. Vivamus orci augue, bibendum eu congue ut, congue condimentum tortor. Pellentesque viverra condimentum lectus at accumsan. Nam nec nunc nisi. Morbi laoreet nunc sit amet odio lobortis a varius odio facilisis. Vestibulum non neque eget mauris laoreet sodales. Etiam urna ligula, vehicula blandit rhoncus ac, elementum id neque.
-
-    %p
-      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id arcu nibh. Phasellus scelerisque tempus dui et interdum. Donec risus enim, elementum eget ultricies sit amet, scelerisque ac elit. Praesent eget semper elit. Etiam porttitor, enim nec gravida aliquam, tortor orci cursus ipsum, ac cursus turpis urna sit amet mi. Donec vel tortor eget odio sollicitudin interdum nec eget mi. Donec facilisis magna in dui blandit eu consectetur enim hendrerit. Donec sem ipsum, fringilla sit amet gravida ut, laoreet in arcu. In dolor leo, sodales commodo dignissim at, consectetur sed ipsum. Ut gravida convallis urna placerat ultricies. Curabitur eu nunc nisl. Nulla gravida commodo lacinia. Donec aliquet elit ac ligula pharetra eget sodales nisi dictum. In gravida imperdiet porttitor.
+    %h2= @page.title
+    = @page.body.html_safe
+    
   .story-sidebar
     %h2 Artist <strong>Roster</strong>
 

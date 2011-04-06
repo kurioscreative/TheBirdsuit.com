@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110405040238
+# Schema version: 20110406232901
 #
 # Table name: releases
 #
@@ -15,6 +15,7 @@
 #  is_featured           :boolean
 #  created_at            :datetime
 #  updated_at            :datetime
+#  cached_slug           :string(255)
 #
 
 class Release < ActiveRecord::Base

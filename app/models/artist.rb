@@ -1,21 +1,24 @@
 # == Schema Information
-# Schema version: 20110405040238
+# Schema version: 20110406232901
 #
 # Table name: artists
 #
-#  id                   :integer         not null, primary key
-#  name                 :string(255)
-#  bio_pic_url          :string(255)
-#  bio_pic_hover_url    :string(255)
-#  biography_text       :text
-#  twitter_id           :string(255)
-#  roster_pic_url       :string(255)
-#  roster_pic_hover_url :string(255)
-#  bio_video_url        :string(255)
-#  bio_video_id         :string(255)
-#  bio_video_type       :string(255)
-#  created_at           :datetime
-#  updated_at           :datetime
+#  id                      :integer         not null, primary key
+#  name                    :string(255)
+#  bio_pic_url             :string(255)
+#  bio_pic_hover_url       :string(255)
+#  biography_text          :text
+#  twitter_id              :string(255)
+#  roster_pic_url          :string(255)
+#  roster_pic_hover_url    :string(255)
+#  bio_video_url           :string(255)
+#  bio_video_id            :string(255)
+#  bio_video_type          :string(255)
+#  created_at              :datetime
+#  updated_at              :datetime
+#  cached_slug             :string(255)
+#  bio_video_img_url       :string(255)
+#  bio_video_img_hover_url :string(255)
 #
 
 class Artist < ActiveRecord::Base

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110405170914) do
+ActiveRecord::Schema.define(:version => 20110406232901) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -32,6 +32,18 @@ ActiveRecord::Schema.define(:version => 20110405170914) do
 
   add_index "artists", ["cached_slug"], :name => "index_artists_on_cached_slug"
   add_index "artists", ["name"], :name => "index_artists_on_name"
+
+  create_table "pages", :force => true do |t|
+    t.text     "body"
+    t.string   "title"
+    t.string   "page_img_url"
+    t.string   "page_name"
+    t.boolean  "activate_as_splash", :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pages", ["page_name"], :name => "index_pages_on_page_name", :unique => true
 
   create_table "posts", :force => true do |t|
     t.string   "title"

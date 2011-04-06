@@ -1,15 +1,5 @@
 - title "Contact Us - The Birdsuit"
-%h2 Contact <strong>Information</strong>
+%h2= @page.title
 .wrapper
-  =image_tag 'http://placehold.it/910x375'
-  %table
-    %tr
-      %th Press Inquiries
-      %th General Inquiries
-      %th Artist Relations
-      %th Booking
-    %tr
-      %td= link_to "mailto:press@thebirdsuit.com"
-      %td= link_to "mailto:general@thebirdsuit.com"
-      %td= link_to "artistrelations@thebirdsuit.com"
-      %td= link_to "events@thebirdsuit.com"
+  =image_tag @page.page_img_url
+  = @page.body.html_safe
