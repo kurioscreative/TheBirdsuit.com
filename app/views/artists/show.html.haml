@@ -11,7 +11,7 @@
     = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
 .one-third-box
   .wrapper
-    = image_tag 'http://placehold.it/270x56'
+    .tweet
 .full-box
   %h2 Release <strong>Material</strong>
   .wrapper
@@ -29,4 +29,5 @@
         \ </div>
     \ <a class="next browse right"></a> 
     %br.clear
-       
+- content_for :javascripts do
+  = render 'tweet'

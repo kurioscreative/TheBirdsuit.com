@@ -2,19 +2,25 @@
 .wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
   .featured-text
     %h3= link_to @featured.title, post_path(@featured)
-    %p= @featured.summary
-  
+    %p
+      = truncate(@featured.summary, :length => 220)
+      = link_to "Read More/Comment"
+    
 %h2 Crowd <strong>Control</strong>
 .wrapper
   - @posts.each do |post| 
     %li.post
       %h3= link_to post.title, post_path(post)
-      %small== #{post.author} | #{post.published_date.strftime('%D')}
-      %p= post.summary
+      %small== Posted by: #{post.author} | Published on: #{post.published_date.strftime('%D')}
+      = simple_format(post.summary)
+      %p.comment-link
+        = render :partial => 'shared/fb_like', :locals => {:item => post}
+        = render :partial => 'shared/retweet', :locals => {:item => post}
+        = link_to "Read More/Comment"
 
 -content_for :sidebar do
   .wrapper
-    Twitter
+    .tweet
   %h2 Latest <strong>Release</strong>
   .wrapper
     =link_to image_tag(@latest_release.release_img_url, 'data-hover' => @latest_release.release_img_hover_url), artist_release_path(@latest_release.artist_id, @latest_release), :rel => "#overlay", :remote => true
@@ -25,3 +31,6 @@
   %h2 Arch<strong>ive</strong>
   .wrapper
     = image_tag 'http://placehold.it/270x160'
+-content_for :javascripts do
+  = render 'twitter'
+  = javascript_include_tag "http://connect.facebook.net/en_US/all.js#xfbml=1"

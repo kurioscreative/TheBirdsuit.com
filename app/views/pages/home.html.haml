@@ -6,14 +6,16 @@
       %p= @featured.summary
   
 .one-third-box
-  %h2 Latest <strong>Release</strong>
   .wrapper
     = image_tag @release.release_img_url, "data-hover" => @release.release_img_hover_url
 .one-third-box
   .wrapper
-    = image_tag 'http://placehold.it/270x56'
+    .tweet
 .full-box
   %h2 Artist <strong>Roster</strong>
   .wrapper
     - @artists.each do |artist| 
       = link_to image_tag(artist.bio_pic_url, "data-hover" => artist.bio_pic_hover_url), artist_path(artist)
+  
+-content_for :javascripts do
+  = render 'tweet'

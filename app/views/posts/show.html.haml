@@ -1,12 +1,14 @@
 %h2= @post.title
 .wrapper
   %small== Posted by: #{@post.author} | Published: #{@post.published_date.strftime('%D')}
-  = simple_format(@post.body)
-  .comments= render 'comments'
-
+  .post-body= simple_format(@post.body)
+  = render :partial => 'shared/fb_like', :locals => {:item => @post}
+  = render :partial => 'shared/retweet', :locals => {:item => @post}
+  .comments
+    = render 'comments'
 -content_for :sidebar do
   .wrapper
-    Twitter
+    .tweet
   %h2 Latest <strong>Release</strong>
   .wrapper
     = image_tag 'http://placehold.it/270x150'
@@ -21,3 +23,5 @@
   %h2 Arch<strong>ive</strong>
   .wrapper
     = image_tag 'http://placehold.it/270x150'
+-content_for :javascripts do
+  = render 'twitter'
