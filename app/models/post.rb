@@ -24,4 +24,10 @@ validates :title, :presence => true
 validates :summary, :presence => true
 validates :body, :presence => true
 validates :author, :presence => true
+
+  default_scope order('published_date DESC') 
+  
+  scope :published, where("published_date <= ?", DateTime.now)
+
+
 end

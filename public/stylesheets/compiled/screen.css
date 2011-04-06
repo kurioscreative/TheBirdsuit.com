@@ -674,7 +674,7 @@ h2:before {
   margin-right: 0;
   width: 306.667px;
   height: 250px;
-  overflow: hidden;
+  overflow: auto;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .bio {
@@ -959,4 +959,124 @@ div.contentWrap {
 /* line 295, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
   vertical-align: middle;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+/* line 306, ../../../app/stylesheets/partials/_custom.scss */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 312, ../../../app/stylesheets/partials/_custom.scss */
+.jspPane {
+  position: absolute;
+}
+
+/* line 317, ../../../app/stylesheets/partials/_custom.scss */
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  background: red;
+}
+
+/* line 327, ../../../app/stylesheets/partials/_custom.scss */
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: red;
+}
+
+/* line 338, ../../../app/stylesheets/partials/_custom.scss */
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 344, ../../../app/stylesheets/partials/_custom.scss */
+.jspCap {
+  display: none;
+}
+
+/* line 349, ../../../app/stylesheets/partials/_custom.scss */
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+/* line 354, ../../../app/stylesheets/partials/_custom.scss */
+.jspTrack {
+  background: #333;
+  position: relative;
+}
+
+/* line 360, ../../../app/stylesheets/partials/_custom.scss */
+.jspDrag {
+  background: #999;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* line 370, ../../../app/stylesheets/partials/_custom.scss */
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+/* line 376, ../../../app/stylesheets/partials/_custom.scss */
+.jspArrow {
+  background: #555;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+/* line 384, ../../../app/stylesheets/partials/_custom.scss */
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+/* line 390, ../../../app/stylesheets/partials/_custom.scss */
+.jspVerticalBar .jspArrow {
+  height: 16px;
+}
+
+/* line 395, ../../../app/stylesheets/partials/_custom.scss */
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+
+/* line 402, ../../../app/stylesheets/partials/_custom.scss */
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+/* line 407, ../../../app/stylesheets/partials/_custom.scss */
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+/* line 415, ../../../app/stylesheets/partials/_custom.scss */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
 }

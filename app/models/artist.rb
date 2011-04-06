@@ -24,4 +24,6 @@ class Artist < ActiveRecord::Base
   attr_accessible :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :cached_slug, :bio_video_img_url, :bio_video_img_hover_url
   
   validates_presence_of :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :bio_video_img_url, :bio_video_img_hover_url
+  
+  default_scope order('name DESC')
 end

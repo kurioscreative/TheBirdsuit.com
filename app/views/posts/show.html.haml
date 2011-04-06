@@ -1,7 +1,7 @@
 %h2= @post.title
 .wrapper
   %small== Posted by: #{@post.author} | Published: #{@post.published_date.strftime('%D')}
-  .post-body= simple_format(@post.body)
+  .post-body= @post.body.html_safe
   = render :partial => 'shared/fb_like', :locals => {:item => @post}
   = render :partial => 'shared/retweet', :locals => {:item => @post}
   .comments

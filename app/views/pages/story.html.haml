@@ -10,7 +10,8 @@
       Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id arcu nibh. Phasellus scelerisque tempus dui et interdum. Donec risus enim, elementum eget ultricies sit amet, scelerisque ac elit. Praesent eget semper elit. Etiam porttitor, enim nec gravida aliquam, tortor orci cursus ipsum, ac cursus turpis urna sit amet mi. Donec vel tortor eget odio sollicitudin interdum nec eget mi. Donec facilisis magna in dui blandit eu consectetur enim hendrerit. Donec sem ipsum, fringilla sit amet gravida ut, laoreet in arcu. In dolor leo, sodales commodo dignissim at, consectetur sed ipsum. Ut gravida convallis urna placerat ultricies. Curabitur eu nunc nisl. Nulla gravida commodo lacinia. Donec aliquet elit ac ligula pharetra eget sodales nisi dictum. In gravida imperdiet porttitor.
   .story-sidebar
     %h2 Artist <strong>Roster</strong>
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'        
+
+    - @artists.each do |artist| 
+      = link_to image_tag(artist.roster_pic_url, 'data-hover' => artist.roster_pic_hover_url), artist_path(artist)
+
   %br.clear

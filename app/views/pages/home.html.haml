@@ -7,7 +7,7 @@
   
 .one-third-box
   .wrapper
-    = image_tag @release.release_img_url, "data-hover" => @release.release_img_hover_url
+    =link_to image_tag(@release.release_img_url, 'data-hover' => @release.release_img_hover_url), artist_release_path(@release.artist_id, @release), :rel => "#overlay", :remote => true
 .one-third-box
   .wrapper
     .tweet
