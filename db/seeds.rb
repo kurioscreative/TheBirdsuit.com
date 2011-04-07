@@ -18,7 +18,7 @@ post = Post.create!(:title => "First Post", :summary => "Lorem ipsum", :body => 
 
 featured_post = Post.create!(:title => "Featured Post", :summary => "Lorem ipsum", :body => "Lorem ipsum est dolorum.", :author => "The Birdsuit", :featured => true, :featured_img_url => "http://placehold.it/590x300", :published_date => DateTime.now)
 
-artist = Artist.create!(:name => "Matty Mayz", :bio_pic_url => "http://placehold.it/220x280", :bio_pic_hover_url => "http://placehold.it/220x280", :biography_text => "Lorem ipsum", :twitter_id => "MattyMayz", :roster_pic_url => "http://placehold.it/270x100", :roster_pic_hover_url => "http://placehold.it/270x100", :bio_video_img_url => "http://placehold.it/270x16", :bio_video_img_hover_url => "http://placehold.it/270x16")
+artist = Artist.create!(:name => "Matty Mayz", :bio_pic_url => "http://placehold.it/220x280", :bio_pic_hover_url => "http://placehold.it/220x280", :biography_text => "Lorem ipsum", :twitter_id => "MattyMayz", :roster_pic_url => "http://placehold.it/270x100", :roster_pic_hover_url => "http://placehold.it/270x100", :bio_video_img_url => "http://placehold.it/270x16", :bio_video_img_hover_url => "http://placehold.it/270x16", :bio_video_url => "http://www.youtube.com/watch?v=_UE1dDYvrYs")
 
 release = Release.create!(:artist_id => artist.id, :release_img_url => "http://placehold.it/270x160", :release_img_hover_url => "http://placehold.it/270x160", :video_url => "http://vimeo.com/21919856", :title => "Test Release", :description => "Test video", :is_featured => false)
 
