@@ -21,7 +21,7 @@
 class Release < ActiveRecord::Base
   belongs_to :artist
   has_friendly_id :title, :use_slug => true
-  attr_accessible :artist_id, :release_img_url, :release_img_hover_url, :video_url, :title, :description, :is_featured, :cached_slug
+  attr_accessible :artist_id, :release_img_url, :release_img_hover_url, :video_url, :title, :description, :is_featured
 
   before_validation :get_video_info
   

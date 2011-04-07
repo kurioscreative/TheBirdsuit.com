@@ -2,9 +2,9 @@ class PagesController < ApplicationController
 
   def home
     splash = Page.find_by_page_name("splash")
-    if splash.activate_as_splash?
-      redirect_to promo_path
-    end
+    
+    redirect_to promo_path if splash.activate_as_splash?
+    
 
     @featured = Post.published.where(:featured => true).first
     @artists = Artist.limit(4)

@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.text :summary
       t.text :body
       t.string :author
-      t.boolean :featured
+      t.boolean :featured, :default => false
       t.string :featured_img_url
       t.datetime :published_date
       t.string :status

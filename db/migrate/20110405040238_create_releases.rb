@@ -9,7 +9,7 @@ class CreateReleases < ActiveRecord::Migration
       t.string :video_url
       t.string :title
       t.text :description
-      t.boolean :is_featured
+      t.boolean :is_featured, :default => false
 
       t.timestamps
     end
