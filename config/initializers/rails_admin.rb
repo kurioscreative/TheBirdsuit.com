@@ -60,10 +60,10 @@ RailsAdmin.config do |config|
         help 'Required (270px x 100px)'
       end
       field :artist_home_img_url do
-        help 'Required (300px x height)'
+        help 'Required (292px x height)'
       end
       field :artist_home_img_hover_url do
-        help 'Required (300px x height)'
+        help 'Required (292px x height)'
       end
       field :bio_video_url do
         help 'Required - Youtube or Vimeo only!'

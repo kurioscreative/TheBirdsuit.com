@@ -20,11 +20,17 @@
     .tweet
 .full-box
   %h2 Artist <strong>Roster</strong>
-  .wrapper.artist-home
-    - @artists.each do |artist| 
-      = link_to image_tag(artist.artist_home_img_url, "data-hover" => artist.artist_home_img_hover_url), artist_path(artist)
-      = link_to image_tag(artist.artist_home_img_url, "data-hover" => artist.artist_home_img_hover_url), artist_path(artist)
-      = link_to image_tag(artist.artist_home_img_url, "data-hover" => artist.artist_home_img_hover_url), artist_path(artist)            
+  .wrapper
+    %ul.artists
+      - @artists.each do |artist|
+        %li
+          = link_to image_tag(artist.artist_home_img_url, 'data-hover' => artist.artist_home_img_hover_url), artist_path(artist)
+        %li
+          = link_to image_tag(artist.artist_home_img_url, 'data-hover' => artist.artist_home_img_hover_url), artist_path(artist)
+        %li
+          = link_to image_tag(artist.artist_home_img_url, 'data-hover' => artist.artist_home_img_hover_url), artist_path(artist)
+    %br.clear
+
             
 -content_for :javascripts do
   = render 'tweet'

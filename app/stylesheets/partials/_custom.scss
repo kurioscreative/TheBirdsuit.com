@@ -150,6 +150,10 @@ h2:before{
     display:block;
     text-align:center;
     margin:0 10px 10px 0;
+    img{
+      max-width:292px;
+      overflow:hidden;
+    }
   }
 }
 //---------- Blog Classes ----------------
