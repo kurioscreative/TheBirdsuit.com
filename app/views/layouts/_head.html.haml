@@ -5,11 +5,12 @@
   %title
     = content_for?(:title) ? content_for(:title) : "The Birdsuit"
     
-  %meta{ :content => "", :name => "description" }/
+  %meta{ :content => "An artist collective focusing on electronic music, visual arts, and the noise/lifestyle that comes with it.", :name => "description" }/
   %meta{ :content => "The Birdsuit", :name => "author" }/
+  %meta{ :content => "electronic, dance, music, blog, visual arts, management, press", :name => "keywords"}
 
   %meta{ :property => "og:site_name", :content => "The Birdsuit" }
-  %meta{ :proprty => "fb:admins", :content => "123000979"}
+  %meta{ :property => "fb:admins", :content => "123000979,1371300249,725180432,1371300078,605062613"}
 
 
   -# Mobile viewport optimized: j.mp/bplateviewport
@@ -21,5 +22,7 @@
   -# JavaScript at the bottom
   
   = csrf_meta_tag
+  = render :partial => 'layouts/analytics'
   
   = yield(:head)
+  
