@@ -5,7 +5,7 @@
 
   <% if @artist.bio_video_type == "vimeo" %>
     <div class="video">
-      <iframe src="http://player.vimeo.com/video/<%= @artist.video_id %>" width="600" height="368" frameborder="0"></iframe>
+      <iframe src="http://player.vimeo.com/video/<%= @artist.bio_video_id %>" width="600" height="368" frameborder="0"></iframe>
     </div>
   <%end%>
 </div>
