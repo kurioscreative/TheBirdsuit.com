@@ -7,8 +7,8 @@ class PagesController < ApplicationController
     
 
     @featured = Post.published.where(:featured => true).first
-    @artists = Artist.limit(4)
-    @release = Release.first    
+    @artists = Artist.limit(3)
+    @release = Release.where(:is_featured => true).first
   end
   
   def story

@@ -39,6 +39,8 @@ class Release < ActiveRecord::Base
       #----- Vimeo ------ #      
       elsif video_url.match(/http:\/\/vimeo\.com\/([a-z0-9]+).*/i)
         {:id => $1, :type => 'vimeo'}
+      elsif video_url.match(/http:\/\/www\.vimeo\.com\/([a-z0-9]+).*/i) 
+        {:id => $1, :type => 'vimeo'}
       else
         {:id => nil, :type => 'website'}
       end
