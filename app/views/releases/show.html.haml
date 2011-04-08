@@ -5,6 +5,9 @@
   .wrapper
     #video
       = render 'video_player', :locals => {:release => @release}
+
+      %p== Artist: #{link_to @release.artist.name, artist_path(@release.artist)}
+      = @release.description
 .one-third-box.last
   .wrapper
     %h3 Description

@@ -1,12 +1,18 @@
 - title "Crowd Control Blog - The Birdsuit"
 %h2 Latest <strong>News</strong>
-.wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
-  .featured-text
-    %h3= link_to @featured.title, post_path(@featured)
-    %p
-      = truncate(@featured.summary, :length => 220)
-      = link_to "Read More/Comment"
-    
+-#
+  .wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
+    .featured-text
+      %h3= link_to @featured.title, post_path(@featured)
+      %p
+        = truncate(@featured.summary, :length => 220)
+        = link_to "Read More/Comment"
+.wrapper
+  .featured2
+    = link_to image_tag(@featured.featured_img_url), post_path(@featured)
+    .featured2-text
+      %h3= link_to @featured.title, post_path(@featured)
+      %p= @featured.summary    
 %h2 Crowd <strong>Control</strong>
 .wrapper
   - @posts.each do |post| 

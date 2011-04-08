@@ -1,15 +1,22 @@
 %h2 Featured <strong>News</strong>
 .two-third-box
-  .wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
-    .featured-text
-      %h3= link_to @featured.title, post_path(@featured)
-      %p= @featured.summary
+  -#
+    .wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
+      .featured-text
+        %h3= link_to @featured.title, post_path(@featured)
+        %p= @featured.summary
+  .wrapper
+    .featured2
+      = link_to image_tag(@featured.featured_img_url), post_path(@featured)
+      .featured2-text
+        %h3= link_to @featured.title, post_path(@featured)
+        %p= @featured.summary
   
 .one-third-box
   .wrapper
     =link_to image_tag(@release.release_img_url, 'data-hover' => @release.release_img_hover_url), artist_release_path(@release.artist_id, @release), :rel => "#overlay", :remote => true
 .one-third-box
-  .wrapper
+  .wrapper.small-tweet
     .tweet
 .full-box
   %h2 Artist <strong>Roster</strong>
