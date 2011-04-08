@@ -20,9 +20,11 @@
     .tweet
 .full-box
   %h2 Artist <strong>Roster</strong>
-  .wrapper
+  .wrapper.artist-home
     - @artists.each do |artist| 
       = link_to image_tag(artist.artist_home_img_url, "data-hover" => artist.artist_home_img_hover_url), artist_path(artist)
+      = link_to image_tag(artist.artist_home_img_url, "data-hover" => artist.artist_home_img_hover_url), artist_path(artist)
+      = link_to image_tag(artist.artist_home_img_url, "data-hover" => artist.artist_home_img_hover_url), artist_path(artist)            
             
 -content_for :javascripts do
   = render 'tweet'

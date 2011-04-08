@@ -113,6 +113,10 @@ h2:before{
 .artist-main{
   height:296px;
 }
+.artist-home img{ 
+  width:299px;
+  overflow:hidden;
+}
 .bio{
   @include column(8, true);
   height:250px;
@@ -293,12 +297,16 @@ a.disabled {
 		height is automatically calculated
 	*/
 	width:600px;		
-	
+
 	/* some padding to layout nested elements nicely  */
 	padding:25px;
 
 	/* a little styling */	
 	font-size:11px;
+}
+.bp img{
+  margin:0;
+  border:0;
 }
   .small-tweet{
     height:73px;
