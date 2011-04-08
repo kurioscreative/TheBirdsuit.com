@@ -13,12 +13,12 @@
     %li.post
       %h3= link_to post.title, post_path(post)
       %small== Posted by: #{post.author} | Published on: #{post.published_date.strftime('%D')}
-      = simple_format(post.summary)
+      = post.body.html_safe
       %p.comment-link
         = render :partial => 'shared/fb_like', :locals => {:item => post}
         = render :partial => 'shared/retweet', :locals => {:item => post}
         = link_to "Read More/Comment"
-
+  = will_paginate(@posts)
 -content_for :sidebar do
   .wrapper
     .tweet
@@ -29,9 +29,10 @@
   .wrapper
     - @artists.each do |artist| 
       = link_to image_tag(artist.roster_pic_url, 'data-hover' => artist.roster_pic_hover_url), artist_path(artist)
-  %h2 Arch<strong>ive</strong>
-  .wrapper
-    = image_tag 'http://placehold.it/270x160'
+  -#
+    %h2 Arch<strong>ive</strong>
+    .wrapper
+      = image_tag 'http://placehold.it/270x160'
 -content_for :javascripts do
   = render 'twitter'
   = javascript_include_tag "http://connect.facebook.net/en_US/all.js#xfbml=1"

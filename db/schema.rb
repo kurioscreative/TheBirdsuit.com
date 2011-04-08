@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110406232901) do
+ActiveRecord::Schema.define(:version => 20110408024754) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(:version => 20110406232901) do
     t.string   "cached_slug"
     t.string   "bio_video_img_url"
     t.string   "bio_video_img_hover_url"
+    t.string   "artist_home_img_url"
+    t.string   "artist_home_img_hover_url"
   end
 
   add_index "artists", ["cached_slug"], :name => "index_artists_on_cached_slug"

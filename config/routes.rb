@@ -5,6 +5,9 @@ TheBirdsuit::Application.routes.draw do
   root :to => "pages#home"
   
   resources :artists, :only => [:index, :show] do
+    member do
+      get 'video'
+    end
     resources :releases, :only => [:show]
   end
   resources :posts, :only => [:index, :show]

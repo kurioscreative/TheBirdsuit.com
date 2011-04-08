@@ -12,17 +12,12 @@
     .tweet
   %h2 Latest <strong>Release</strong>
   .wrapper
-    = image_tag 'http://placehold.it/270x150'
+    =link_to image_tag(@latest_release.release_img_url, 'data-hover' => @latest_release.release_img_hover_url), artist_release_path(@latest_release.artist_id, @latest_release), :rel => "#overlay", :remote => true
+
   %h2 We <strong>Are</strong> The Birdsuit
   .wrapper
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'
-    = image_tag 'http://placehold.it/270x100'
-  %h2 Arch<strong>ive</strong>
-  .wrapper
-    = image_tag 'http://placehold.it/270x150'
+    - @artists.each do |artist| 
+      = link_to image_tag(artist.roster_pic_url, 'data-hover' => artist.roster_pic_hover_url), artist_path(artist)
+
 -content_for :javascripts do
   = render 'twitter'

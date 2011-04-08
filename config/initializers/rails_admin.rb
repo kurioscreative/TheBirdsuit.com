@@ -14,7 +14,6 @@ RailsAdmin.config do |config|
   config.model Post do
     edit do
       field :title
-      field :summary
       field :body, :text do
         ckeditor true
       end
@@ -59,6 +58,12 @@ RailsAdmin.config do |config|
       end
       field :roster_pic_hover_url do
         help 'Required (270px x 100px)'
+      end
+      field :artist_home_img_url do
+        help 'Required (300px x height)'
+      end
+      field :artist_home_img_hover_url do
+        help 'Required (300px x height)'
       end
       field :bio_video_url do
         help 'Required - Youtube or Vimeo only!'

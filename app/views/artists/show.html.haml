@@ -9,7 +9,7 @@
     %br.clear
 .one-third-box
   .wrapper
-    = link_to image_tag('http://placehold.it/270x160'), story_path, :rel => "#overlay", :remote => true
+    = link_to image_tag(@artist.bio_video_img_url, 'data-hover' => @artist.bio_video_img_hover_url), video_artist_path(@artist), :rel => "#overlay", :remote => true
 .one-third-box
   .wrapper
     .tweet
