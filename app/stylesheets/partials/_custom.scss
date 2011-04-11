@@ -57,7 +57,9 @@ ul.nav{
       padding-top:10px;
       width:140px;
       li{
+        clear:both;
         margin-left:-50px;
+        display:block;
       }
       a:link{
         color:#222;
@@ -195,7 +197,7 @@ h2:before{
   background:rgba(0,0,0,0.8);
   position:absolute;
   bottom:0;
-  width:590px;
+  width:571px;
   left:-1px;
   bottom:-1px;
 }
@@ -458,4 +460,21 @@ a.disabled {
 * html .jspCorner
 {
     margin: 0 -3px 0 0;
+}
+
+
+#mc_embed_signup{
+ font-size:12px;
+ width:180px;
+ height:20px;
+ float:right;
+ padding-top:10px;
+  #mce-EMAIL{
+  float:left;
+  }
+ #mc-embedded-subscribe{
+   color:#fff;
+   background-color:#d1a4de;
+   float:right;
+ }
 }
