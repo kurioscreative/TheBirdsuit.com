@@ -5,6 +5,9 @@ class PostsController < ApplicationController
     @artists = Artist.all
     @nonartists = NonArtist.all
     @latest_release = Release.where(:is_featured => true).first
+
+
+
   end
   
   def show

@@ -3,16 +3,16 @@
   %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }/
   
   %title
-    = content_for?(:title) ? content_for(:title) : "The Birdsuit"
+    = content_for?(:title) ? content_for(:title) : "The Bird Suit"
     
   %meta{ :content => "An artist collective focusing on electronic music, visual arts, and the noise/lifestyle that comes with it.", :name => "description" }/
-  %meta{ :content => "The Birdsuit", :name => "author" }/
+  %meta{ :content => "The Bird Suit", :name => "author" }/
   %meta{ :content => "electronic, dance, music, blog, visual arts, management, press", :name => "keywords"}
 
-  %meta{ :property => "og:site_name", :content => "The Birdsuit" }
+  %meta{ :property => "og:site_name", :content => "The Bird Suit" }
   %meta{ :property => "fb:admins", :content => "123000979,1371300249,725180432,1371300078,605062613"}
 
-
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold'
   -# Mobile viewport optimized: j.mp/bplateviewport
   %meta{ :content => "width=device-width, initial-scale=1.0", :name => "viewport" }/
   
