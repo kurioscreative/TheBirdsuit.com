@@ -30,7 +30,7 @@ class Artist < ActiveRecord::Base
   
   validates_presence_of :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :bio_video_img_url, :bio_video_img_hover_url
   
-  default_scope order('name ASC')
+  default_scope order('sort_id ASC')
   
     before_validation :get_video_info
   

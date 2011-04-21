@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110408141102) do
+ActiveRecord::Schema.define(:version => 20110421202631) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -30,10 +30,12 @@ ActiveRecord::Schema.define(:version => 20110408141102) do
     t.string   "bio_video_img_hover_url"
     t.string   "artist_home_img_url"
     t.string   "artist_home_img_hover_url"
+    t.integer  "sort_id"
   end
 
   add_index "artists", ["cached_slug"], :name => "index_artists_on_cached_slug"
   add_index "artists", ["name"], :name => "index_artists_on_name"
+  add_index "artists", ["sort_id"], :name => "index_artists_on_sort_id"
 
   create_table "non_artists", :force => true do |t|
     t.string   "email"
@@ -42,7 +44,10 @@ ActiveRecord::Schema.define(:version => 20110408141102) do
     t.string   "roster_img_hover_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "sort_id"
   end
+
+  add_index "non_artists", ["sort_id"], :name => "index_non_artists_on_sort_id"
 
   create_table "pages", :force => true do |t|
     t.text     "body"

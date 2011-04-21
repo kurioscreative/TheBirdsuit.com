@@ -18,5 +18,5 @@ attr_accessible :email, :name, :roster_img_url, :roster_img_hover_url
 
 validates_presence_of :email, :name, :roster_img_url, :roster_img_hover_url
 
-default_scope order('name ASC')
+  default_scope order('sort_id ASC')
 end

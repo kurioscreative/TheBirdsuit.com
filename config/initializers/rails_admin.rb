@@ -45,6 +45,9 @@ RailsAdmin.config do |config|
   config.model Artist do
     edit do
       field :name
+      field :sort_id do
+        help 'Option - Lower number = Higher position'
+      end
       field :biography_text
       field :bio_pic_url do
         help 'Required (220px x 280px)'
