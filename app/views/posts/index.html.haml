@@ -12,7 +12,10 @@
     = link_to image_tag(@featured.featured_img_url), post_path(@featured)
     .featured2-text
       %h3= link_to @featured.title, post_path(@featured)
-      %p= @featured.summary    
+      %small== By "#{@featured.author}" | #{@featured.published_date.strftime('%B %d, %Y')}
+      %p
+        = @featured.summary
+        = link_to "Read More", post_path(@featured), :class => "a-btn"
 %h2 Crowd Control
 .wrapper
   - @posts.each do |post| 

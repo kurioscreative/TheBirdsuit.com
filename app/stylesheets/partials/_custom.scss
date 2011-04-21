@@ -164,6 +164,21 @@ h2:before{
       max-width:292px;
       overflow:hidden;
     };
+    h2{
+      font-height:.8em;
+      margin:0;
+      padding:0;
+      a{
+        text-decoration:none;
+        color:#fff;
+      }
+      a:visited{
+        color:#fff;
+      }
+    }
+    h2:before{
+      content:none;
+    }
   };
 }
 //---------- Blog Classes ----------------
@@ -197,7 +212,7 @@ h2:before{
   vertical-align:bottom;
   position:relative;
 }
-.featured2-text{
+.bp .featured2-text{
   padding:10px;
   background:#333;
   background:rgba(0,0,0,0.8);
@@ -206,6 +221,11 @@ h2:before{
   width:571px;
   left:-1px;
   bottom:-1px;
+  p, h3{
+    margin:0;
+    padding:0;
+  }
+  
 }
 
 .bp li.post{
