@@ -18,4 +18,6 @@ class Page < ActiveRecord::Base
 validates_uniqueness_of :page_name
 
 validates_presence_of :body, :title, :page_img_url, :page_name
+
+attr_protected :id, :created_at, :updated_at
 end

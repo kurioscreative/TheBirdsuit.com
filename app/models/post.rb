@@ -26,6 +26,8 @@ validates :summary, :presence => true
 validates :body, :presence => true
 validates :author, :presence => true
 
+attr_protected :id, :created_at, :updated_at
+
   default_scope order('published_date DESC') 
   
   scope :published, where("published_date <= ?", DateTime.now)

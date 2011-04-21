@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110408024754
+# Schema version: 20110421202631
 #
 # Table name: artists
 #
@@ -21,12 +21,14 @@
 #  bio_video_img_hover_url   :string(255)
 #  artist_home_img_url       :string(255)
 #  artist_home_img_hover_url :string(255)
+#  sort_id                   :integer
 #
 
 class Artist < ActiveRecord::Base
   has_many :releases
   has_friendly_id :name, :use_slug => true
-  attr_accessible :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :cached_slug, :bio_video_img_url, :bio_video_img_hover_url
+
+  attr_accessible :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :cached_slug, :bio_video_img_url, :bio_video_img_hover_url, :sort_id
   
   validates_presence_of :name, :bio_pic_url, :bio_pic_hover_url, :biography_text, :twitter_id, :roster_pic_url, :roster_pic_hover_url, :bio_video_url, :bio_video_img_url, :bio_video_img_hover_url
   

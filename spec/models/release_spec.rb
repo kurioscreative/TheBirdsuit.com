@@ -1,5 +1,13 @@
 require 'spec_helper'
 
 describe Release do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+  it { should belong_to(:artist) }
+  
+
+
+  it { should_not allow_mass_assignment_of :id }
+  it { should_not allow_mass_assignment_of :created_at }
+  it { should_not allow_mass_assignment_of :updated_at }
+
 end

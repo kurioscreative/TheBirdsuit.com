@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110408141102
+# Schema version: 20110421202631
 #
 # Table name: non_artists
 #
@@ -10,6 +10,7 @@
 #  roster_img_hover_url :string(255)
 #  created_at           :datetime
 #  updated_at           :datetime
+#  sort_id              :integer
 #
 
 class NonArtist < ActiveRecord::Base
