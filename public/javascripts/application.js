@@ -9,7 +9,6 @@ $(function() {
 	$("a[rel]").overlay({
  
 		mask: 'black',
-		effect: 'apple',
  
 		onBeforeLoad: function() {
  
