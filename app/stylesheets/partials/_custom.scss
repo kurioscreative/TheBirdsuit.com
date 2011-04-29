@@ -16,6 +16,9 @@
     padding-top:10px;
     margin-bottom:0;
     padding-bottom:0;
+    position:relative;
+    top:15px;
+
   }  
 }
 .bp h1,h2,h3,h4,h5,h6 {
@@ -36,6 +39,8 @@ ul.nav{
     float:left;
     display:block;
     margin:0 15px;
+    font-family: 'Arial Black';
+
     a:link{
       color:#fff;
       text-decoration:none;
@@ -57,12 +62,14 @@ ul.nav{
       content: url('/images/heart_sm_hover.gif');        
     }  
     ul.sub-nav{
+
       display:none;
       position:absolute;
 
       padding-top:10px;
       width:140px;
       li{
+        font-family:'Arial', sans-serif;
         clear:both;
         margin-left:-50px;
         display:block;
