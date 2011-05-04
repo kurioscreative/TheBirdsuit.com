@@ -1,0 +1,10 @@
+!!! 5
+
+= render :partial => 'layouts/head'
+%body{ :lang => 'en', :class => "bp one-col splash #{controller.controller_name}" }
+  %header
+  #container
+    #content
+      = render :partial => 'layouts/flashes'
+      = yield
+  %footer
