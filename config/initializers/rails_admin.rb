@@ -14,6 +14,7 @@ RailsAdmin.config do |config|
   config.model Post do
     edit do
       field :title
+      field :summary
       field :body, :text do
         ckeditor true
       end

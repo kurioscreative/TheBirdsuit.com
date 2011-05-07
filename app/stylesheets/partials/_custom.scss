@@ -173,13 +173,13 @@ h2:before{
     float:left;
     display:block;
     text-align:center;
-    margin:0 10px 10px 0;
+    margin:0 14px 10px 0;
     max-width:292px;
     overflow:hidden;
     img{
       max-width:292px;
       overflow:hidden;
-    };
+    }
     h2{
       font-height:.8em;
       margin:0;
@@ -190,6 +190,9 @@ h2:before{
       }
       a:visited{
         color:#fff;
+      }
+      a:hover{
+        color:#d1a4de;
       }
     }
     h2:before{
@@ -272,6 +275,18 @@ h2:before{
   border:1px solid #222;
   background:#010101;
   padding:20px;
+  -webkit-box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
+  -moz-box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
+  box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
+  margin-bottom:20px;
+}
+.artists-wrapper{
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border:1px solid #222;
+  background:#010101;
+  padding:20px 10px 20px 20px;
   -webkit-box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
   -moz-box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;
   box-shadow: 2px 2px 10px #444 inset, 2px 2px 10px #000;

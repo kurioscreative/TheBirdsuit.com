@@ -22,7 +22,6 @@ has_friendly_id :title, :use_slug => true
 
 validates :published_date, :presence => true
 validates :title, :presence => true
-validates :summary, :presence => true
 validates :body, :presence => true
 validates :author, :presence => true
 
