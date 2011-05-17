@@ -453,7 +453,7 @@ form.bp textarea {
 
 /* line 24, ../../../app/stylesheets/partials/_two_col.scss */
 body.two-col {
-  background: #222222 url("/images/bg-new.jpg") repeat;
+  background: #222222 url("/images/bg.jpg") repeat;
 }
 /* line 26, ../../../app/stylesheets/partials/_two_col.scss */
 body.two-col #container {
@@ -508,7 +508,7 @@ body.two-col #content {
 
 /* line 24, ../../../app/stylesheets/partials/_one_col.scss */
 body.one-col {
-  background: #222222 url("/images/bg-new.jpg") repeat;
+  background: #222222 url("/images/bg.jpg") repeat;
 }
 /* line 26, ../../../app/stylesheets/partials/_one_col.scss */
 body.one-col #container {
