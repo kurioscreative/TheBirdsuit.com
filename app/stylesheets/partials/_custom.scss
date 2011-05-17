@@ -115,6 +115,9 @@ ul.nav{
     }
   }
 }
+footer{
+  text-transform:uppercase
+}
 .bp .footerWrap{
   width:100%;
   background:#111;
@@ -136,12 +139,22 @@ ul.nav{
     }
   }
 }
-.footer-credits{
+.bp .footer-credits{
    padding-top:5px;
     width:940px;
     margin:0 auto;
     text-align:right;
     color:#aaa;
+
+    a{
+      margin:0 10px;
+      text-decoration:none;
+      color:#eee;
+    }
+    a:link{
+      color:#eee;
+    }
+
   }
 
 
