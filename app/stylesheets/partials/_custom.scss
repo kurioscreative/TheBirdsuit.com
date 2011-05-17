@@ -115,19 +115,34 @@ ul.nav{
     }
   }
 }
-.footer{
-  width:940px;
-  text-align:center;
-  min-height:100px;
-  padding:10px;
-  margin: 0 auto;
+.bp .footerWrap{
+  width:100%;
   background:#111;
-  background:rgba(0,0,0, 0.1);
+  background:rgba(0,0,0, 0.5);
+  text-align:center;
+  padding:20px 0;
+  margin: 0 auto;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  font-size:.9em;
+  font-size:1em;
+  .footer-links{
+    a{
+      margin:0 10px;
+      text-decoration:none;
+      color:#eee;
+    }
+    a:link{
+      color:#eee;
+    }
+  }
 }
-
+.footer-credits{
+   padding-top:5px;
+    width:940px;
+    margin:0 auto;
+    text-align:right;
+    color:#aaa;
+  }
 
 
 h2:before{
