@@ -559,7 +559,7 @@ body.splash h1 {
   min-width: 1000px;
   height: 100px;
   background: #111111 url("/images/header.jpg") repeat-x;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #aaa;
   -webkit-box-shadow: 0 5px 8px #222;
   -moz-box-shadow: 0 5px 8px #222;
   box-shadow: 0 5px 8px #222;
