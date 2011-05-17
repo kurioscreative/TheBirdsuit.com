@@ -559,7 +559,7 @@ body.splash h1 {
   min-width: 1000px;
   height: 100px;
   background: #111111 url("/images/header.jpg") repeat-x;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
   -webkit-box-shadow: 0 5px 8px #222;
   -moz-box-shadow: 0 5px 8px #222;
   box-shadow: 0 5px 8px #222;
@@ -1222,12 +1222,14 @@ div.contentWrap {
   height: 20px;
   float: right;
   padding-top: 10px;
+  padding-right: 15px;
+  text-align: right;
 }
-/* line 529, ../../../app/stylesheets/partials/_custom.scss */
+/* line 531, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup #mce-EMAIL {
   float: left;
 }
-/* line 532, ../../../app/stylesheets/partials/_custom.scss */
+/* line 534, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup #mc-embedded-subscribe {
   color: #fff;
   background-color: #d1a4de;
