@@ -154,7 +154,6 @@ footer{
     a:link{
       color:#eee;
     }
-
   }
 
 
@@ -171,7 +170,7 @@ h2:before{
   overflow:hidden;
 }
 .bio{
-  @include column(8, true);
+  @include column(8.8, true);
   height:250px;
   overflow:auto;
 }
