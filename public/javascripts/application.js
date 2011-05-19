@@ -2,25 +2,7 @@ $(function() {
 	$(".scrollable").scrollable();
 });
 
-$(function() {
- 
-	// if the function argument is given to overlay,
-	// it is assumed to be the onBeforeLoad event listener
-	$("a[rel]").overlay({
- 
-		mask: 'black',
- 
-		onBeforeLoad: function() {
- 
-			// grab wrapper element inside content
-			var wrap = this.getOverlay().find(".contentWrap");
-      var href = this.getTrigger().attr("href");
-			// load the page specified in the trigger
-			wrap.load(href + " #video");
-		}
- 
-	});
-});
+
 
 $(function() {
     $('img[data-hover]').hover(function() {
