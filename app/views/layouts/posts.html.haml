@@ -12,6 +12,8 @@
       = render :partial => 'layouts/flashes'
       #breadcrumbs= crumbs
       = yield
+
   %footer
     = render :partial => 'layouts/footer'
     = render :partial => 'layouts/javascripts'
+    = render 'layouts/fb_include'
