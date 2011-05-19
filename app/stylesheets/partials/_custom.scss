@@ -10,7 +10,7 @@ body.splash{
   min-width:1000px;
   height:100px;
   background:#111 url('/images/header.jpg') repeat-x;
-  border-bottom:1px solid #eee;
+  border-bottom:1px solid #535353;
   -webkit-box-shadow: 0 5px 8px #222;
   -moz-box-shadow: 0 5px 8px #222;
   box-shadow: 0 5px 8px #222;
@@ -34,6 +34,9 @@ body.splash{
 }
 .last_bold {
   font-family: 'Arial Black';
+}
+.bp .purple{
+  color:#d1a4de;
 }
 nav{
   float:right;
@@ -116,9 +119,12 @@ ul.nav{
   }
 }
 footer{
-  text-transform:uppercase
+  text-transform:uppercase;
+  margin:30px;
+
 }
 .bp .footerWrap{
+  color:#444;
   width:100%;
   background:#111;
   background:rgba(0,0,0, 0.5);
@@ -126,26 +132,26 @@ footer{
   padding:20px 0;
   margin: 0 auto;
   -moz-border-radius: 10px;
+  -webkit-border-radius:10px;
   border-radius: 10px;
   font-size:1em;
   .footer-links{
     a{
       margin:0 10px;
       text-decoration:none;
-      color:#eee;
+      color:#666;
     }
     a:link{
-      color:#eee;
+      color:#666;
     }
   }
 }
 .bp .footer-credits{
-   padding-top:5px;
+    padding-top:5px;
     width:940px;
     margin:0 auto;
     text-align:right;
     color:#aaa;
-
     a{
       margin:0 10px;
       text-decoration:none;
@@ -155,8 +161,6 @@ footer{
       color:#eee;
     }
   }
-
-
 h2:before{
   padding-right:5px;
   content: url('/images/heart_med.png');
@@ -566,4 +570,8 @@ a.disabled {
    background-color:#d1a4de;
    float:right;
  }
+}
+.bodyContent{
+  padding:0 20px;
+    border-right:1px solid #333;
 }

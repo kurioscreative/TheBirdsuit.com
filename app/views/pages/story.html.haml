@@ -4,8 +4,7 @@
   .title-img= image_tag @page.page_img_url
   .two-third-box
     %h2= @page.title
-    = @page.body.html_safe
-    
+    .bodyContent= @page.body.html_safe
   .story-sidebar
     %h2 Artists
 

@@ -3,7 +3,7 @@
 .two-third-box
   .wrapper.artist-main
     .bio-image= image_tag @artist.bio_pic_url, 'data-hover' => @artist.bio_pic_hover_url
-    %h3 Biography
+    %h3.purple <span class="last_bold">Bio</span>graphy
     .bio
       = simple_format(@artist.biography_text)
     %br.clear
