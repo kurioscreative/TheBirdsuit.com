@@ -2,7 +2,6 @@
 
 %head
   = render :partial => 'layouts/head'
-  = render :partial => 'layouts/javascripts'
 
 %body{ :lang => 'en', :class => "bp two-col #{controller.controller_name}" }
   %header
@@ -18,3 +17,5 @@
       =yield(:sidebar)
   %footer
     = render :partial => 'layouts/footer'
+    = render :partial => 'layouts/javascripts'
+    = render 'layouts/fb_include'
