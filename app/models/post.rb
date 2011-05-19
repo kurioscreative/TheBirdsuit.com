@@ -32,5 +32,5 @@ attr_protected :id, :created_at, :updated_at
   scope :published, where("published_date <= ?", DateTime.now)
 
   cattr_reader :per_page
-  @@per_page = 5
+  @@per_page = 6
 end

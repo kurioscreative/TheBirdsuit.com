@@ -30,7 +30,7 @@ gem "activemerchant", "~> 1.9.4", :require => "active_merchant"
 gem "haml-rails" #https://github.com/indirect/haml-rails
 gem "jquery-rails" #https://github.com/indirect/jquery-rails
 gem 'crumble', :require => "breadcrumb"
-gem 'will_paginate', '3.0.pre2' #Pagination
+gem 'will_paginate', "~>3.0.pre2" #Pagination
 gem 'compass'
 gem 'aasm'
 gem "nbrew-country_select", :require => "country_select"

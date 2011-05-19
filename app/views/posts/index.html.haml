@@ -28,7 +28,7 @@
         = render :partial => 'shared/retweet', :locals => {:item => post}
         = link_to "Read More/Comment"
   = will_paginate(@posts)
-  = pageless(@posts.total_pages, posts_path)
+  
 -content_for :sidebar do
   .wrapper
     .tweet
@@ -49,4 +49,3 @@
 -content_for :javascripts do
   = render 'twitter'
   = javascript_include_tag "http://connect.facebook.net/en_US/all.js#xfbml=1"
-  = javascript_include_tag "jquery.pageless.min.js"

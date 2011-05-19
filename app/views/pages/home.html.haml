@@ -1,5 +1,6 @@
-%h2 Featured <strong>News</strong>
+
 .two-third-box
+  %h2 Featured <strong>News</strong>
   -#
     .wrapper.featured{:style => "background:url('#{@featured.featured_img_url}')"}
       .featured-text
@@ -15,6 +16,7 @@
           = @featured.summary
           = link_to "Read More", post_path(@featured), :class => "a-btn"
 .one-third-box
+  %h2 Latest Release
   .wrapper
     =link_to image_tag(@release.release_img_url, 'data-hover' => @release.release_img_hover_url), artist_release_path(@release.artist_id, @release), :rel => "#overlay", :remote => true
 .one-third-box
