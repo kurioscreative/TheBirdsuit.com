@@ -12,6 +12,8 @@
       = render :partial => 'layouts/flashes'
       #breadcrumbs= crumbs
       = yield
+    #sidebar
+      = yield(:sidebar)
 
   %footer
     = render :partial => 'layouts/footer'
