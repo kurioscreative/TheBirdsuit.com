@@ -43,9 +43,9 @@ $(function() {
  
 			// grab wrapper element inside content
 			var wrap = this.getOverlay().find(".contentWrap");
-      var href = this.getTrigger().attr("href");
+      var link_href = this.getTrigger().attr("href");
 			// load the page specified in the trigger
-			wrap.load(href + " #video");
+			wrap.load(link_href + " #video");
 		}
  
 	});
