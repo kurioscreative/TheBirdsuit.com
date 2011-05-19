@@ -577,6 +577,7 @@ body.splash h1 {
   padding-bottom: 0;
   position: relative;
   top: 15px;
+  width: 353px;
 }
 
 /* line 31, ../../../app/stylesheets/partials/_custom.scss */
@@ -1248,21 +1249,25 @@ div.contentWrap {
   margin: 0 -3px 0 0;
 }
 
-/* line 551, ../../../app/stylesheets/partials/_custom.scss */
+/* line 550, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup {
   font-size: 12px;
-  min-width: 210px;
+  width: 210px;
   height: 20px;
   float: right;
   padding-top: 10px;
   padding-right: 15px;
   text-align: right;
 }
-/* line 559, ../../../app/stylesheets/partials/_custom.scss */
+/* line 558, ../../../app/stylesheets/partials/_custom.scss */
+#mc_embed_signup input[type='text'] {
+  width: 150px;
+}
+/* line 561, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup #mce-EMAIL {
   float: left;
 }
-/* line 562, ../../../app/stylesheets/partials/_custom.scss */
+/* line 564, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup #mc-embedded-subscribe {
   color: #fff;
   background-color: #d1a4de;

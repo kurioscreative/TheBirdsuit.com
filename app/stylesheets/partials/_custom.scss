@@ -24,7 +24,7 @@ body.splash{
     padding-bottom:0;
     position:relative;
     top:15px;
-
+    width:353px;
   }  
 }
 
@@ -547,15 +547,17 @@ a.disabled {
     margin: 0 -3px 0 0;
 }
 
-
 #mc_embed_signup{
  font-size:12px;
- min-width:210px;
+ width:210px;
  height:20px;
  float:right;
  padding-top:10px;
  padding-right:15px;
  text-align:right;
+ input[type='text']{
+   width:150px;
+ }
   #mce-EMAIL{
   float:left;
   }
