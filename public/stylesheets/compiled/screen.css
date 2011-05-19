@@ -559,10 +559,10 @@ body.splash h1 {
   min-width: 1000px;
   height: 100px;
   background: #111111 url("/images/header.jpg") repeat-x;
-  border-bottom: 1px solid #535353;
-  -webkit-box-shadow: 0 5px 8px #222;
-  -moz-box-shadow: 0 5px 8px #222;
-  box-shadow: 0 5px 8px #222;
+  border-bottom: 1px solid #333;
+  -webkit-box-shadow: 0 8px 10px #151515;
+  -moz-box-shadow: 0 8px 10px #151515;
+  box-shadow: 0 8px 10px #151515;
 }
 
 /* line 18, ../../../app/stylesheets/partials/_custom.scss */
@@ -706,21 +706,22 @@ footer {
   padding: 20px 0;
   margin: 0 auto;
   -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   font-size: 1em;
 }
-/* line 138, ../../../app/stylesheets/partials/_custom.scss */
+/* line 139, ../../../app/stylesheets/partials/_custom.scss */
 .bp .footerWrap .footer-links a {
   margin: 0 10px;
   text-decoration: none;
   color: #666;
 }
-/* line 143, ../../../app/stylesheets/partials/_custom.scss */
+/* line 144, ../../../app/stylesheets/partials/_custom.scss */
 .bp .footerWrap .footer-links a:link {
   color: #666;
 }
 
-/* line 148, ../../../app/stylesheets/partials/_custom.scss */
+/* line 149, ../../../app/stylesheets/partials/_custom.scss */
 .bp .footer-credits {
   padding-top: 5px;
   width: 940px;
@@ -728,35 +729,35 @@ footer {
   text-align: right;
   color: #aaa;
 }
-/* line 154, ../../../app/stylesheets/partials/_custom.scss */
+/* line 155, ../../../app/stylesheets/partials/_custom.scss */
 .bp .footer-credits a {
   margin: 0 10px;
   text-decoration: none;
   color: #eee;
 }
-/* line 159, ../../../app/stylesheets/partials/_custom.scss */
+/* line 160, ../../../app/stylesheets/partials/_custom.scss */
 .bp .footer-credits a:link {
   color: #eee;
 }
 
-/* line 163, ../../../app/stylesheets/partials/_custom.scss */
+/* line 164, ../../../app/stylesheets/partials/_custom.scss */
 h2:before {
   padding-right: 5px;
   content: url("/images/heart_med.png");
 }
 
-/* line 168, ../../../app/stylesheets/partials/_custom.scss */
+/* line 169, ../../../app/stylesheets/partials/_custom.scss */
 .artist-main {
   height: 296px;
 }
 
-/* line 171, ../../../app/stylesheets/partials/_custom.scss */
+/* line 172, ../../../app/stylesheets/partials/_custom.scss */
 .artist-home img {
   width: 299px;
   overflow: hidden;
 }
 
-/* line 175, ../../../app/stylesheets/partials/_custom.scss */
+/* line 176, ../../../app/stylesheets/partials/_custom.scss */
 .bio {
   display: inline;
   float: left;
@@ -770,7 +771,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 180, ../../../app/stylesheets/partials/_custom.scss */
+/* line 181, ../../../app/stylesheets/partials/_custom.scss */
 .bio-image {
   display: inline;
   float: left;
@@ -782,7 +783,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 183, ../../../app/stylesheets/partials/_custom.scss */
+/* line 184, ../../../app/stylesheets/partials/_custom.scss */
 .scrollable {
   float: left;
   position: relative;
@@ -790,26 +791,26 @@ h2:before {
   width: 830px;
   height: 160px;
 }
-/* line 189, ../../../app/stylesheets/partials/_custom.scss */
+/* line 190, ../../../app/stylesheets/partials/_custom.scss */
 .scrollable .items {
   width: 20000em;
   position: absolute;
 }
-/* line 192, ../../../app/stylesheets/partials/_custom.scss */
+/* line 193, ../../../app/stylesheets/partials/_custom.scss */
 .scrollable .items div {
   float: left;
 }
-/* line 195, ../../../app/stylesheets/partials/_custom.scss */
+/* line 196, ../../../app/stylesheets/partials/_custom.scss */
 .scrollable .items .item {
   margin-right: 10px;
 }
 
-/* line 200, ../../../app/stylesheets/partials/_custom.scss */
+/* line 201, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists {
   padding: 0;
   margin: 0;
 }
-/* line 203, ../../../app/stylesheets/partials/_custom.scss */
+/* line 204, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li {
   float: left;
   display: block;
@@ -818,36 +819,36 @@ h2:before {
   max-width: 292px;
   overflow: hidden;
 }
-/* line 210, ../../../app/stylesheets/partials/_custom.scss */
+/* line 211, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li img {
   max-width: 292px;
   overflow: hidden;
 }
-/* line 214, ../../../app/stylesheets/partials/_custom.scss */
+/* line 215, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li h2 {
   font-height: .8em;
   margin: 0;
   padding: 0;
 }
-/* line 218, ../../../app/stylesheets/partials/_custom.scss */
+/* line 219, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li h2 a {
   text-decoration: none;
   color: #fff;
 }
-/* line 222, ../../../app/stylesheets/partials/_custom.scss */
+/* line 223, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li h2 a:visited {
   color: #fff;
 }
-/* line 225, ../../../app/stylesheets/partials/_custom.scss */
+/* line 226, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li h2 a:hover {
   color: #d1a4de;
 }
-/* line 229, ../../../app/stylesheets/partials/_custom.scss */
+/* line 230, ../../../app/stylesheets/partials/_custom.scss */
 .bp ul.artists li h2:before {
   content: none;
 }
 
-/* line 235, ../../../app/stylesheets/partials/_custom.scss */
+/* line 236, ../../../app/stylesheets/partials/_custom.scss */
 .comments {
   background: #f5f5f5;
   -moz-border-radius: 10px;
@@ -855,14 +856,14 @@ h2:before {
   padding: 5px;
 }
 
-/* line 241, ../../../app/stylesheets/partials/_custom.scss */
+/* line 242, ../../../app/stylesheets/partials/_custom.scss */
 .featured {
   height: 300px;
   vertical-align: bottom;
   position: relative;
 }
 
-/* line 246, ../../../app/stylesheets/partials/_custom.scss */
+/* line 247, ../../../app/stylesheets/partials/_custom.scss */
 .featured-text {
   padding: 10px;
   background: #333;
@@ -877,7 +878,7 @@ h2:before {
   border-radius: 3px;
 }
 
-/* line 259, ../../../app/stylesheets/partials/_custom.scss */
+/* line 260, ../../../app/stylesheets/partials/_custom.scss */
 .featured2 {
   height: 300px;
   width: 590px;
@@ -885,7 +886,7 @@ h2:before {
   position: relative;
 }
 
-/* line 265, ../../../app/stylesheets/partials/_custom.scss */
+/* line 266, ../../../app/stylesheets/partials/_custom.scss */
 .bp .featured2-text {
   padding: 10px;
   background: #333;
@@ -896,13 +897,13 @@ h2:before {
   left: -1px;
   bottom: -1px;
 }
-/* line 274, ../../../app/stylesheets/partials/_custom.scss */
+/* line 275, ../../../app/stylesheets/partials/_custom.scss */
 .bp .featured2-text p, .bp .featured2-text h3 {
   margin: 0;
   padding: 0;
 }
 
-/* line 281, ../../../app/stylesheets/partials/_custom.scss */
+/* line 282, ../../../app/stylesheets/partials/_custom.scss */
 .bp li.post {
   margin: 0;
   margin-bottom: 20px;
@@ -910,26 +911,26 @@ h2:before {
   display: block;
   border-bottom: 1px dotted #666;
 }
-/* line 287, ../../../app/stylesheets/partials/_custom.scss */
+/* line 288, ../../../app/stylesheets/partials/_custom.scss */
 .bp li.post h3 {
   margin-bottom: 5px;
 }
-/* line 290, ../../../app/stylesheets/partials/_custom.scss */
+/* line 291, ../../../app/stylesheets/partials/_custom.scss */
 .bp li.post small {
   margin-bottom: 10px;
   display: block;
 }
-/* line 294, ../../../app/stylesheets/partials/_custom.scss */
+/* line 295, ../../../app/stylesheets/partials/_custom.scss */
 .bp li.post .comment-link {
   text-align: right;
 }
 
-/* line 298, ../../../app/stylesheets/partials/_custom.scss */
+/* line 299, ../../../app/stylesheets/partials/_custom.scss */
 .post-body {
   margin: 10px 0;
 }
 
-/* line 302, ../../../app/stylesheets/partials/_custom.scss */
+/* line 303, ../../../app/stylesheets/partials/_custom.scss */
 .wrapper {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -943,7 +944,7 @@ h2:before {
   margin-bottom: 20px;
 }
 
-/* line 314, ../../../app/stylesheets/partials/_custom.scss */
+/* line 315, ../../../app/stylesheets/partials/_custom.scss */
 .artists-wrapper {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -957,7 +958,7 @@ h2:before {
   margin-bottom: 20px;
 }
 
-/* line 326, ../../../app/stylesheets/partials/_custom.scss */
+/* line 327, ../../../app/stylesheets/partials/_custom.scss */
 .two-third-box {
   display: inline;
   float: left;
@@ -969,7 +970,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 329, ../../../app/stylesheets/partials/_custom.scss */
+/* line 330, ../../../app/stylesheets/partials/_custom.scss */
 .one-third-box {
   display: inline;
   float: left;
@@ -981,7 +982,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 332, ../../../app/stylesheets/partials/_custom.scss */
+/* line 333, ../../../app/stylesheets/partials/_custom.scss */
 .full-box {
   display: inline;
   float: left;
@@ -993,7 +994,7 @@ h2:before {
   overflow-x: hidden;
 }
 
-/* line 335, ../../../app/stylesheets/partials/_custom.scss */
+/* line 336, ../../../app/stylesheets/partials/_custom.scss */
 .story-sidebar {
   display: inline;
   float: left;
@@ -1006,7 +1007,7 @@ h2:before {
 }
 
 /* prev, next, prevPage and nextPage buttons */
-/* line 341, ../../../app/stylesheets/partials/_custom.scss */
+/* line 342, ../../../app/stylesheets/partials/_custom.scss */
 a.browse {
   background: url("/images/hori_large.png") no-repeat;
   display: block;
@@ -1019,60 +1020,60 @@ a.browse {
 }
 
 /* right */
-/* line 353, ../../../app/stylesheets/partials/_custom.scss */
+/* line 354, ../../../app/stylesheets/partials/_custom.scss */
 a.right {
   background-position: 0 -30px;
   clear: right;
   margin-right: 0px;
 }
 
-/* line 354, ../../../app/stylesheets/partials/_custom.scss */
+/* line 355, ../../../app/stylesheets/partials/_custom.scss */
 a.right:hover {
   background-position: -30px -30px;
 }
 
-/* line 355, ../../../app/stylesheets/partials/_custom.scss */
+/* line 356, ../../../app/stylesheets/partials/_custom.scss */
 a.right:active {
   background-position: -60px -30px;
 }
 
 /* left */
-/* line 359, ../../../app/stylesheets/partials/_custom.scss */
+/* line 360, ../../../app/stylesheets/partials/_custom.scss */
 a.left {
   margin-left: 0px;
 }
 
-/* line 360, ../../../app/stylesheets/partials/_custom.scss */
+/* line 361, ../../../app/stylesheets/partials/_custom.scss */
 a.left:hover {
   background-position: -30px 0;
 }
 
-/* line 361, ../../../app/stylesheets/partials/_custom.scss */
+/* line 362, ../../../app/stylesheets/partials/_custom.scss */
 a.left:active {
   background-position: -60px 0;
 }
 
 /* disabled navigational button */
-/* line 364, ../../../app/stylesheets/partials/_custom.scss */
+/* line 365, ../../../app/stylesheets/partials/_custom.scss */
 a.disabled {
   visibility: hidden !important;
 }
 
-/* line 373, ../../../app/stylesheets/partials/_custom.scss */
+/* line 374, ../../../app/stylesheets/partials/_custom.scss */
 #overlay {
   height: 450px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
 
-/* line 379, ../../../app/stylesheets/partials/_custom.scss */
+/* line 380, ../../../app/stylesheets/partials/_custom.scss */
 div.contentWrap {
   height: 441px;
   overflow-y: auto;
 }
 
 /* the overlayed element */
-/* line 384, ../../../app/stylesheets/partials/_custom.scss */
+/* line 385, ../../../app/stylesheets/partials/_custom.scss */
 .apple_overlay {
   display: none;
   /* growing background image */
@@ -1088,18 +1089,18 @@ div.contentWrap {
   font-size: 11px;
 }
 
-/* line 403, ../../../app/stylesheets/partials/_custom.scss */
+/* line 404, ../../../app/stylesheets/partials/_custom.scss */
 .bp img {
   margin: 0;
   border: 0;
 }
 
-/* line 407, ../../../app/stylesheets/partials/_custom.scss */
+/* line 408, ../../../app/stylesheets/partials/_custom.scss */
 .small-tweet {
   height: 73px;
 }
 
-/* line 410, ../../../app/stylesheets/partials/_custom.scss */
+/* line 411, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list, .query .tweet_list {
   font-size: .8em;
   list-style-type: none;
@@ -1108,30 +1109,30 @@ div.contentWrap {
   overflow-y: hidden;
 }
 
-/* line 417, ../../../app/stylesheets/partials/_custom.scss */
+/* line 418, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {
   text-transform: uppercase;
 }
 
-/* line 419, ../../../app/stylesheets/partials/_custom.scss */
+/* line 420, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list li, .query .tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: .5em;
 }
 
-/* line 424, ../../../app/stylesheets/partials/_custom.scss */
+/* line 425, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
   background-color: #222;
 }
 
-/* line 426, ../../../app/stylesheets/partials/_custom.scss */
+/* line 427, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
   padding-right: .5em;
   float: left;
 }
 
-/* line 429, ../../../app/stylesheets/partials/_custom.scss */
+/* line 430, ../../../app/stylesheets/partials/_custom.scss */
 .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
@@ -1142,18 +1143,18 @@ div.contentWrap {
  * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
  * may not operate correctly without them.
  */
-/* line 440, ../../../app/stylesheets/partials/_custom.scss */
+/* line 441, ../../../app/stylesheets/partials/_custom.scss */
 .jspContainer {
   overflow: hidden;
   position: relative;
 }
 
-/* line 446, ../../../app/stylesheets/partials/_custom.scss */
+/* line 447, ../../../app/stylesheets/partials/_custom.scss */
 .jspPane {
   position: absolute;
 }
 
-/* line 451, ../../../app/stylesheets/partials/_custom.scss */
+/* line 452, ../../../app/stylesheets/partials/_custom.scss */
 .jspVerticalBar {
   position: absolute;
   top: 0;
@@ -1163,7 +1164,7 @@ div.contentWrap {
   background: red;
 }
 
-/* line 461, ../../../app/stylesheets/partials/_custom.scss */
+/* line 462, ../../../app/stylesheets/partials/_custom.scss */
 .jspHorizontalBar {
   position: absolute;
   bottom: 0;
@@ -1173,30 +1174,30 @@ div.contentWrap {
   background: red;
 }
 
-/* line 472, ../../../app/stylesheets/partials/_custom.scss */
+/* line 473, ../../../app/stylesheets/partials/_custom.scss */
 .jspVerticalBar *,
 .jspHorizontalBar * {
   margin: 0;
   padding: 0;
 }
 
-/* line 478, ../../../app/stylesheets/partials/_custom.scss */
+/* line 479, ../../../app/stylesheets/partials/_custom.scss */
 .jspCap {
   display: none;
 }
 
-/* line 483, ../../../app/stylesheets/partials/_custom.scss */
+/* line 484, ../../../app/stylesheets/partials/_custom.scss */
 .jspHorizontalBar .jspCap {
   float: left;
 }
 
-/* line 488, ../../../app/stylesheets/partials/_custom.scss */
+/* line 489, ../../../app/stylesheets/partials/_custom.scss */
 .jspTrack {
   background: #333;
   position: relative;
 }
 
-/* line 494, ../../../app/stylesheets/partials/_custom.scss */
+/* line 495, ../../../app/stylesheets/partials/_custom.scss */
 .jspDrag {
   background: #999;
   position: relative;
@@ -1205,14 +1206,14 @@ div.contentWrap {
   cursor: pointer;
 }
 
-/* line 504, ../../../app/stylesheets/partials/_custom.scss */
+/* line 505, ../../../app/stylesheets/partials/_custom.scss */
 .jspHorizontalBar .jspTrack,
 .jspHorizontalBar .jspDrag {
   float: left;
   height: 100%;
 }
 
-/* line 510, ../../../app/stylesheets/partials/_custom.scss */
+/* line 511, ../../../app/stylesheets/partials/_custom.scss */
 .jspArrow {
   background: #555;
   text-indent: -20000px;
@@ -1220,30 +1221,30 @@ div.contentWrap {
   cursor: pointer;
 }
 
-/* line 518, ../../../app/stylesheets/partials/_custom.scss */
+/* line 519, ../../../app/stylesheets/partials/_custom.scss */
 .jspArrow.jspDisabled {
   cursor: default;
   background: #80808d;
 }
 
-/* line 524, ../../../app/stylesheets/partials/_custom.scss */
+/* line 525, ../../../app/stylesheets/partials/_custom.scss */
 .jspVerticalBar .jspArrow {
   height: 16px;
 }
 
-/* line 529, ../../../app/stylesheets/partials/_custom.scss */
+/* line 530, ../../../app/stylesheets/partials/_custom.scss */
 .jspHorizontalBar .jspArrow {
   width: 16px;
   float: left;
   height: 100%;
 }
 
-/* line 536, ../../../app/stylesheets/partials/_custom.scss */
+/* line 537, ../../../app/stylesheets/partials/_custom.scss */
 .jspVerticalBar .jspArrow:focus {
   outline: none;
 }
 
-/* line 541, ../../../app/stylesheets/partials/_custom.scss */
+/* line 542, ../../../app/stylesheets/partials/_custom.scss */
 .jspCorner {
   background: #eeeef4;
   float: left;
@@ -1251,12 +1252,12 @@ div.contentWrap {
 }
 
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
-/* line 549, ../../../app/stylesheets/partials/_custom.scss */
+/* line 550, ../../../app/stylesheets/partials/_custom.scss */
 * html .jspCorner {
   margin: 0 -3px 0 0;
 }
 
-/* line 553, ../../../app/stylesheets/partials/_custom.scss */
+/* line 554, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup {
   font-size: 12px;
   width: 210px;
@@ -1266,22 +1267,22 @@ div.contentWrap {
   padding-right: 15px;
   text-align: right;
 }
-/* line 561, ../../../app/stylesheets/partials/_custom.scss */
+/* line 562, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup input[type='text'] {
   width: 150px;
 }
-/* line 564, ../../../app/stylesheets/partials/_custom.scss */
+/* line 565, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup #mce-EMAIL {
   float: left;
 }
-/* line 567, ../../../app/stylesheets/partials/_custom.scss */
+/* line 568, ../../../app/stylesheets/partials/_custom.scss */
 #mc_embed_signup #mc-embedded-subscribe {
   color: #fff;
   background-color: #d1a4de;
   float: right;
 }
 
-/* line 573, ../../../app/stylesheets/partials/_custom.scss */
+/* line 574, ../../../app/stylesheets/partials/_custom.scss */
 .bodyContent {
   padding: 0 20px;
   border-right: 1px solid #333;

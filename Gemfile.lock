@@ -62,8 +62,8 @@ GEM
     capistrano (2.5.20)
       highline
       highline
-      net-scp
       net-scp (>= 1.0.0)
+      net-scp
       net-sftp
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
@@ -241,4 +241,4 @@ DEPENDENCIES
   shoulda-matchers
   sqlite3
   unicorn
-  will_paginate (= 3.0.pre2)
+  will_paginate (~> 3.0.pre2)
