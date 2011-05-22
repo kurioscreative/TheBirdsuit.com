@@ -10,7 +10,7 @@ body.splash{
   min-width:1000px;
   height:100px;
   background:#111 url('/images/header.jpg') repeat-x;
-  border-bottom:1px solid #333;
+  border-bottom:1px solid #ddd;
   -webkit-box-shadow: 0 8px 10px #151515;
   -moz-box-shadow: 0 8px 10px #151515;
   box-shadow: 0 8px 10px #151515;
@@ -153,9 +153,7 @@ footer{
     text-align:right;
     color:#aaa;
     a{
-      margin:0 10px;
       text-decoration:none;
-      color:#eee;
     }
     a:link{
       color:#eee;
@@ -166,6 +164,9 @@ h2:before{
   content: url('/images/heart_med.png');
 }
 //---------- Artist ----------------
+.bp h2.artist-name{
+  font-size:1.5em;
+}
 .artist-main{
   height:296px;
 }

@@ -5,5 +5,5 @@
       - @artists.each do |artist|
         %li
           = link_to image_tag(artist.artist_home_img_url, 'data-hover' => artist.artist_home_img_hover_url), resource_path(artist)
-          %h2= link_to artist.name, artist_path(artist)                
+          %h2.artist-name= link_to artist.name, artist_path(artist)
       %br.clear
