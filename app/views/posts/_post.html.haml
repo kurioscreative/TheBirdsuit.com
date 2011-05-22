@@ -1,0 +1,8 @@
+%li.post
+  %h3= link_to post.title, post_path(post)
+  %small== Posted by: #{post.author} | Published on: #{post.published_date.strftime('%D')}
+  = post.body.html_safe
+  %p.comment-link
+    = render :partial => 'shared/fb_like', :locals => {:item => post}
+    = render :partial => 'shared/retweet', :locals => {:item => post}
+    = link_to "Read More/Comment"
